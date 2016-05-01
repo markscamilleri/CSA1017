@@ -1,0 +1,193 @@
+\documentclass[12pt,a4paper,]{report}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Foundation-Related Packages %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[margin=2.5cm]{geometry}
+%\usepackage{subfiles}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   Maths-Related Packages   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[fleqn]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{siunitx}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%        SIUNITX setup        %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\sisetup{zero-decimal-to-integer, round-mode=places, round-precision=3}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    Code-Related Packages    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{listings}
+\usepackage{algorithm2e}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Graphic-Related Packages  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage{xcolor-solarized}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%       Other Packages       %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[style=ieee,backend=biber]{biblatex}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{eurosym}
+\usepackage{hyperref}
+\usepackage{multirow}
+\usepackage{parskip}
+\usepackage{tocloft}
+\usepackage{xparse}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\usepackage{lastpage}
+
+\lhead{\slshape \leftmark}
+\rhead{\slshape \rightmark}
+\rfoot{Page \thepage\ of \pageref{LastPage}}
+\cfoot{}
+
+
+\renewcommand{\chaptername}{Task}
+\renewcommand{\thechapter}{\arabic{chapter}}
+\renewcommand{\thesection}{Task \arabic{chapter}\alph{section}} 
+\renewcommand{\thesubsection}{Task \arabic{chapter}\alph{section}.\arabic{subsection}} 
+
+\cftsetindents{chapter}{0em}{3.75em}
+\cftsetindents{section}{1.5em}{3em}
+\cftsetindents{subsection}{3em}{4.5em}
+
+\renewcommand{\cftchappresnum}{Task }
+
+\def\chapterautorefname{Task}
+
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\lstset{inputpath="/home/mark/workspace/",% Folder storing code
+}
+
+\lstdefinestyle{prog}{
+  backgroundcolor=\color{white},    % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}
+  basicstyle=\footnotesize\ttfamily\color{black},% the size of the fonts that are used for the code
+  breakatwhitespace=false,          % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                  % sets automatic line breaking
+  captionpos=b,                     % sets the caption-position to bottom
+  commentstyle=\color{mygreen},     % comment style
+  deletekeywords={...},             % if you want to delete keywords from the given language
+  escapeinside={\%*}{*)},           % if you want to add LaTeX within your code
+  extendedchars=true,               % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  keepspaces=true,                  % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\color{blue},        % keyword style
+  language=Java,                    % the language of the code
+  morekeywords={*,...},             % if you want to add more keywords to the set
+  numbers=left,                     % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=5pt,                    % how far the line-numbers are from the code
+  numberstyle=\tiny\color{mygray},  % the style that is used for the line-numbers
+  rulecolor=\color{black},          % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                 % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,           % underline spaces within strings only
+  showtabs=false,                   % show tabs within strings adding particular underscores
+  stepnumber=1,                     % the step between two line-numbers. If it's 1, each line will be numbered
+  stringstyle=\color{mymauve},      % string literal style
+  tabsize=2,                        % sets default tabsize to 2 spaces
+}
+
+
+
+\lstdefinestyle{sterm}{
+    backgroundcolor=\color{solarized-base3},
+    basicstyle=\ttfamily\small\color{solarized-base01},             % -- Making the font monospaced and small
+    breaklines=true,                                                % -- Allows automatic line breaking
+%   captionpos=b,                                                   % -- Caption position at bottom of listing
+    commentstyle = \color{solarized-base1},                         % -- Sets comments to solarized-green
+    escapeinside = {\%*}{*},                                        % -- Useful for adding LaTeX within the code
+    emphstyle =\bfseries\color{solarized-cyan},                     % -- Emphasized text style to red
+    identifierstyle=\color{solarized-base00},                       % -- Style for Identifiers
+    keepspaces=true,                                                % -- Keeps Spaces in text, useful for keeping identation of code.
+    keywordstyle =[1]\color{solarized-orange}\bfseries,             % -- Keyword style
+    keywordstyle =[2]\color{solarized-yellow}\bfseries,             % -- Keyword2 style
+    numbers=none,                                                   % -- Line numbers on the left
+    showspaces=false,                                               % -- Do not show spaces everywhere by adding particular underscores
+    showtabs=fase,                                                  % -- Do not show tabs within strings adding particular underscores
+    stringstyle=\color{solarized-blue},                             % -- String style
+    tabsize=2,                                                      % -- Setting the tab size to 2 spaces.
+    framexleftmargin=0pt,
+    framexrightmargin=0pt,
+    framextopmargin=0pt,
+}
+\lstset{style=prog}
+
+\tikzstyle{overbrace text style}=[font=\footnotesize, above, pos=.5, yshift=5mm]
+\tikzstyle{overbrace style}=[decorate,decoration={brace,raise=2mm,amplitude=7.5pt}]
+\tikzstyle{underbrace style}=[decorate,decoration={brace,raise=2mm,amplitude=3pt,mirror},color=gray]
+\tikzstyle{underbrace text style}=[font=\tiny, below, pos=.5, yshift=-3mm]
+
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{arrows}
+
+\newcommand{\source}{\pagebreak\subsection*{The source code for \thesection}}
+\newcommand{\AND}{{\normalfont\textbf{and}}}
+
+\DeclareDocumentEnvironment{assumption}{o}{
+  \begin{quotation}
+  \centering
+  \begin{tabular}{rp{0.65\linewidth}}
+    Assumption\IfNoValueF{#1}{s} Made: &\em
+  }{
+  \end{tabular}
+  \end{quotation}
+  }
+
+\DeclareDocumentEnvironment{limitation}{o}{
+  \begin{quotation}
+  \centering
+  \begin{tabular}{rp{0.65\linewidth}}
+    Limitation\IfNoValueF{#1}{s}: &\em
+  }{
+  \end{tabular}
+  \end{quotation}
+  }
+
+
+\addbibresource{/home/mark/Documents/BibTeX/library.bib}
+
+\begin{document}
+\begin{titlepage}
+\vspace*{\fill}
+\centering
+\includegraphics[width=0.2\textwidth]{University_of_Malta_Logo}\\
+\vspace*{3em}
+\textbf{\LARGE CSA 1017 - Data Sturctures and Algorithms 1}\\
+\vspace*{0.5em}
+\textbf{\Large Assignment}\\
+\vspace{3em}
+\large Mark Said Camilleri\\
+B.Sc. (Hons) (Computing Science)\\
+University of Malta\\
+\vspace*{1em}
+Friday 4th May 2016
+\vfill
+\end{titlepage}
+\pagebreak
+\tableofcontents
+\addtocontents{toc}{~\hfill\textbf{Page}\par}
+
+
+
+
+\printbibliography[title={References}]
+\addcontentsline{toc}{chapter}{References}
+\end{document}
