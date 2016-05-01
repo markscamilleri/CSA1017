@@ -5,7 +5,7 @@ import java.util.Scanner;
  */
 public class Question2 {
 
-    public static void main(String args[]){
+    public static void main(String args[]) {
 
         //Initialize Scanner object
         Scanner in = new Scanner(System.in).useDelimiter("\n");
@@ -27,37 +27,37 @@ public class Question2 {
         for (int i = 0; i < expression.length(); i++) {
             char cChar = expression.charAt(i);
 
-            if (Character.isWhitespace(cChar))continue;
-            else if(cChar == '+'){
+            if (Character.isWhitespace(cChar)) continue;
+            else if (cChar == '+') {
                 double num1 = nums.pop();
                 double num2 = nums.pop();
 
-                nums.push(num2+num1);
-            }else if(cChar == '-'){
+                nums.push(num2 + num1);
+            } else if (cChar == '-') {
                 double num1 = nums.pop();
                 double num2 = nums.pop();
 
-                nums.push(num2-num1);
-            }else if(cChar == '*'){
+                nums.push(num2 - num1);
+            } else if (cChar == '*') {
                 double num1 = nums.pop();
                 double num2 = nums.pop();
 
-                nums.push(num2*num1);
-            }else if(cChar == '/'){
+                nums.push(num2 * num1);
+            } else if (cChar == '/') {
                 double num1 = nums.pop();
                 double num2 = nums.pop();
 
-                nums.push(num2/num1);
-            }else{
+                nums.push(num2 / num1);
+            } else {
                 int start = i;
-                while(Character.isDigit(expression.charAt(i)) || expression.charAt(i) == '.')i++;
+                while (Character.isDigit(expression.charAt(i)) || expression.charAt(i) == '.') i++;
 
-                nums.push(Double.parseDouble(expression.substring(start,i)));
+                nums.push(Double.parseDouble(expression.substring(start, i)));
             }
-            System.out.printf("| %-49s |\n",nums.toString());
+            System.out.printf("| %-49s |\n", nums.toString());
         }
         System.out.println("|---------------------------------------------------|");
-        System.out.printf("| Answer of Evaluation = %-26s |\n",nums.pop().toString());
+        System.out.printf("| Answer of Evaluation = %-26s |\n", nums.pop().toString());
         System.out.println("|___________________________________________________2|");
 
     }

@@ -9,7 +9,7 @@ public class Question3b {
 
     private static Scanner in;
 
-    public static void main(String args[]){
+    public static void main(String args[]) {
 
         //Initialize Scanner object
         in = new Scanner(System.in).useDelimiter("\n");
@@ -24,8 +24,8 @@ public class Question3b {
 
         int prime = in.nextInt();
 
-        if(isPrime(prime)) System.out.printf("| %31d is a prime number |\n",prime);
-        else System.out.printf("| %27d is not a prime number |\n",prime);
+        if (isPrime(prime)) System.out.printf("| %31d is a prime number |\n", prime);
+        else System.out.printf("| %27d is not a prime number |\n", prime);
 
     }
 
@@ -34,16 +34,16 @@ public class Question3b {
 
         Arrays.fill(nos, true);
 
-       for (int i = 1; i <= prime; i++) {
-           if(i == 1)nos[i-1] = false;
-            else if (nos[i-1]){
+        for (int i = 1; i <= prime; i++) {
+            if (i == 1) nos[i - 1] = false;
+            else if (nos[i - 1]) {
                 for (int j = i + i; j <= prime; j += i) {
-                    nos[j-1] = false;
+                    nos[j - 1] = false;
                 }
             }
-           if(!nos[prime-1])break;
-       }
+            if (!nos[prime - 1]) break;
+        }
         System.out.println("|---------------------------------------------------|");
-        return nos[prime-1];
+        return nos[prime - 1];
     }
 }

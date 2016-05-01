@@ -21,22 +21,22 @@ public class Question9 {
             System.out.println("| Please input the number of terms to calculate the |");
             System.out.print("| sum of: ");
 
-            try{
-               n = in.nextInt();
-            }catch (InputMismatchException ime){
+            try {
+                n = in.nextInt();
+            } catch (InputMismatchException ime) {
                 System.out.println("|   Your input was not accepted. Please try again   |");
                 n = -1;
                 in.nextLine();
             }
-        }while(n == -1);
+        } while (n == -1);
 
         double result = fibsum(n);
-        System.out.printf("| The sum to the first %-5d terms is: %-12g |\n",n,result);
+        System.out.printf("| The sum to the first %-5d terms is: %-12g |\n", n, result);
         System.out.println("‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾");
 
     }
 
-    public static double fibsum(int n){
+    public static double fibsum(int n) {
         double result = 0;
         double fib1 = 0;
         double fib2 = 1;

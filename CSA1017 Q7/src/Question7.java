@@ -22,7 +22,7 @@ public class Question7 {
         int[] numbers = {0};
 
         boolean inputIsCorrect;
-        do{
+        do {
             try {
                 inputIsCorrect = true;
 
@@ -36,7 +36,7 @@ public class Question7 {
                 for (int i = 0; i < text_nos.length; i++) {
                     numbers[i] = Integer.parseInt(text_nos[i]);
                 }
-            }catch (NumberFormatException nme){
+            } catch (NumberFormatException nme) {
                 inputIsCorrect = false;
 
                 System.out.println("|---------------------------------------------------|");
@@ -44,21 +44,21 @@ public class Question7 {
                 System.out.println("|                 Please try again.                 |");
                 System.out.println("|---------------------------------------------------|");
             }
-        }while (!inputIsCorrect);
+        } while (!inputIsCorrect);
 
         System.out.println("|===================================================|");
-        System.out.printf("| The maximum number from your list was: %10d |\n",findMax(numbers,Integer.MIN_VALUE));
+        System.out.printf("| The maximum number from your list was: %10d |\n", findMax(numbers, Integer.MIN_VALUE));
         System.out.println("|===================================================|");
     }
 
-    public static int findMax(int[] nums, int max){
-        if(nums.length == 0){
+    public static int findMax(int[] nums, int max) {
+        if (nums.length == 0) {
             return max;
-        }else{
-            if(nums[0] > max){
+        } else {
+            if (nums[0] > max) {
                 max = nums[0];
             }
-            return findMax(Arrays.copyOfRange(nums,1,nums.length),max);
+            return findMax(Arrays.copyOfRange(nums, 1, nums.length), max);
 
         }
     }

@@ -36,13 +36,13 @@ public class Question4 {
     private static int[] shellSort(int[] unsorted) {
         int[] sorted = Arrays.copyOf(unsorted, SIZE);
 
-        for (int sep = ((int) Math.pow(2, Math.log(SIZE) / Math.log(2)-1) - 1); sep > 0; sep= (sep+1)/2-1){
-             for (int i = sep; i < SIZE; i++) {
+        for (int sep = ((int) Math.pow(2, Math.log(SIZE) / Math.log(2) - 1) - 1); sep > 0; sep = (sep + 1) / 2 - 1) {
+            for (int i = sep; i < SIZE; i++) {
                 int temp = sorted[i];
 
                 int j;
-                 //Finds position of temp
-                for(j = i; j >= sep && sorted[j-sep] > temp;  j -=  sep){
+                //Finds position of temp
+                for (j = i; j >= sep && sorted[j - sep] > temp; j -= sep) {
                     //swap
                     sorted[j] = sorted[j - sep];
                 }

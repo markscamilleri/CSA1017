@@ -2,9 +2,9 @@
  * Created by mark on 18/02/16.
  */
 public class Question6 {
-    
+
     public static final int SIZE = 32;
-    
+
     public static void main(String[] args) {
 
         System.out.println("_____________________________________________________");
@@ -13,7 +13,7 @@ public class Question6 {
         System.out.println("|         Submission by Mark Said Camilleri         |");
         System.out.println("|           Task 6: Matrix Multiplication           |");
         System.out.println("|---------------------------------------------------|");
-        
+
         double[][] matrixA = new double[SIZE][SIZE];
         double[][] matrixB = new double[SIZE][SIZE];
 
@@ -49,7 +49,7 @@ public class Question6 {
         for (int i = 0; i < SIZE; i++) {
 
             for (int j = 0; j < SIZE; j++) {
-                System.out.printf("%5.2f ",matrixA[i][j]);
+                System.out.printf("%5.2f ", matrixA[i][j]);
             }
             System.out.println();
             System.out.print("           ");
@@ -60,7 +60,7 @@ public class Question6 {
         for (int i = 0; i < SIZE; i++) {
 
             for (int j = 0; j < SIZE; j++) {
-                System.out.printf("%5.2f ",matrixB[i][j]);
+                System.out.printf("%5.2f ", matrixB[i][j]);
             }
             System.out.println();
             System.out.print("           ");
@@ -72,7 +72,7 @@ public class Question6 {
         for (int i = 0; i < SIZE; i++) {
 
             for (int j = 0; j < SIZE; j++) {
-                System.out.printf("%7.2f ",result[i][j]);
+                System.out.printf("%7.2f ", result[i][j]);
             }
             System.out.println();
             System.out.print("           ");
@@ -84,11 +84,12 @@ public class Question6 {
 
     /**
      * Performs a matrix multiplication for 1 cell only.
+     *
      * @param row The row of the first matrix to be multiplied
      * @param col The colum of the second matrix to be multiplied
      * @return The value of the cell that resides in both the row and column that were inputted, for the resultant matrix.
      */
-    static double cellMult(double[] row, double[] col){
+    static double cellMult(double[] row, double[] col) {
         double result = 0;
 
         for (int i = 0; i < SIZE; i++) {
@@ -100,10 +101,11 @@ public class Question6 {
 
     /**
      * Transposes a square matrix of n x n size
+     *
      * @param matrix The matrix to be transposed
      * @return matrix transposed
      */
-    static double[][] matTranspose(double[][] matrix){
+    static double[][] matTranspose(double[][] matrix) {
 
         double[][] transposed = new double[matrix.length][matrix[0].length];
 

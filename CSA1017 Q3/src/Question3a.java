@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Question3a {
 
-    public static void main(String args[]){
+    public static void main(String args[]) {
 
         //Initialize Scanner object
         Scanner in = new Scanner(System.in).useDelimiter("\n");
@@ -22,8 +22,8 @@ public class Question3a {
         long prime = in.nextLong();
 
         System.out.println("|---------------------------------------------------|");
-        if(isPrime(prime)) System.out.printf("| %31d is a prime number |\n",prime);
-        else System.out.printf("| %27d is not a prime number |\n",prime);
+        if (isPrime(prime)) System.out.printf("| %31d is a prime number |\n", prime);
+        else System.out.printf("| %27d is not a prime number |\n", prime);
 
     }
 
@@ -32,7 +32,7 @@ public class Question3a {
         else if (prime % 2 == 0) return false;
         else {
             double root = Math.sqrt(prime);
-            for (int i = 3; i <= root; i+=2) {
+            for (int i = 3; i <= root; i += 2) {
                 if (prime % i == 0) return false;
             }
             return true;

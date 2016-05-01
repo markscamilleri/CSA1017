@@ -32,37 +32,36 @@ public class Question8 {
 
         /*===================== CHECK IF INPUT IS CORRECT ========================*/
         boolean isWrong = false;
-        do{
+        do {
             isWrong = false;
             exp = in.nextLine();
 
-            if(exp.charAt(0) != 's' && exp.charAt(0) != 'c'){
+            if (exp.charAt(0) != 's' && exp.charAt(0) != 'c') {
                 isWrong = true;
                 System.out.println("| Please enter the input with the function character|");
-            }
-            else if(exp.charAt(exp.length()-1) != 'd' && exp.charAt(exp.length()-1) != 'r'){
+            } else if (exp.charAt(exp.length() - 1) != 'd' && exp.charAt(exp.length() - 1) != 'r') {
                 isWrong = true;
                 System.out.println("| Please enter the input with the unit character    |");
             }
         }
-        while(isWrong);
+        while (isWrong);
 
         /*====================== PARSE USER INPUT ================================*/
 
         char fn = exp.charAt(0);  //First character determines which function to evaluate
-        char units = exp.charAt(exp.length()-1); //Last character determines the units
+        char units = exp.charAt(exp.length() - 1); //Last character determines the units
 
         double angle;
         //Multiplies the value by pi if "pi" is inputted.
-        if(exp.contains("pi")){
-            angle = ((exp.length()== 4)?1:Double.valueOf(exp.substring(1,exp.length()-3))) * Math.PI;
-        }else angle = Double.valueOf(exp.substring(1,exp.length()-1));
+        if (exp.contains("pi")) {
+            angle = ((exp.length() == 4) ? 1 : Double.valueOf(exp.substring(1, exp.length() - 3))) * Math.PI;
+        } else angle = Double.valueOf(exp.substring(1, exp.length() - 1));
 
         //Converts to radians since Mclaurins is in radians
-        if(units == 'd')angle = Math.toRadians(angle);
+        if (units == 'd') angle = Math.toRadians(angle);
 
         //Reduces the angle to between -pi and pi.
-        angle %= (2* Math.PI);
+        angle %= (2 * Math.PI);
 
         /*=============== ASK USER HOW MANY TERMS TO EVALUATE ====================*/
         System.out.println("|    Please enter the number of terms to evaluate   |");
@@ -70,29 +69,29 @@ public class Question8 {
 
         int n = in.nextInt();
 
-        double result = (fn == 's')?sine(angle,n):cosine(angle,n);
+        double result = (fn == 's') ? sine(angle, n) : cosine(angle, n);
 
         System.out.printf("| The answer is: %-34f |", result);
     }
 
-    public static double sine(double angle, int terms){
+    public static double sine(double angle, int terms) {
         double result = 0;
         for (int n = 0; n <= terms; n++) {
-            result += (Math.pow(-1,n)*Math.pow(angle,2*n + 1))/fact(2*n +1);
+            result += (Math.pow(-1, n) * Math.pow(angle, 2 * n + 1)) / fact(2 * n + 1);
         }
         return result;
     }
 
-    public static double cosine(double angle, int terms){
+    public static double cosine(double angle, int terms) {
         double result = 0;
         for (int n = 0; n <= terms; n++) {
-            result += (Math.pow(-1,n)*Math.pow(angle,2*n))/fact(2*n);
+            result += (Math.pow(-1, n) * Math.pow(angle, 2 * n)) / fact(2 * n);
         }
         return result;
     }
 
 
-    private static double fact(double n){
+    private static double fact(double n) {
         double result = 1;
         for (int i = 1; i <= n; i++) {
             result *= i;
