@@ -39,6 +39,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage[style=ieee,backend=biber]{biblatex}
 \usepackage{booktabs}
+\renewcommand{\arraystretch}{1.3}
+
 \usepackage{enumitem}
 \usepackage{eurosym}
 \usepackage{hyperref}
@@ -46,6 +48,10 @@
 \usepackage{parskip}
 \usepackage{tocloft}
 \usepackage{xparse}
+\usepackage{enumitem}
+\setlist[description]{leftmargin=10ex,labelindent=10ex}
+
+
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -76,7 +82,7 @@
 \definecolor{mygray}{rgb}{0.5,0.5,0.5}
 \definecolor{mymauve}{rgb}{0.58,0,0.82}
 
-\lstset{inputpath="/home/mark/workspace/",% Folder storing code
+\lstset{inputpath="/home/mark/IdeaProjects/CSA1017/",% Folder storing code
 }
 
 \lstdefinestyle{prog}{
@@ -170,8 +176,8 @@
 \centering
 \includegraphics[width=0.2\textwidth]{University_of_Malta_Logo}\\
 \vspace*{3em}
-\textbf{\LARGE CSA 1017 - Data Sturctures and Algorithms 1}\\
-\vspace*{0.5em}
+\textbf{\LARGE CSA 1017\\\vspace{0.1em}Data Structures and Algorithms 1}\\
+\vspace*{0.75em}
 \textbf{\Large Assignment}\\
 \vspace{3em}
 \large Mark Said Camilleri\\
@@ -185,9 +191,91 @@ Friday 4th May 2016
 \tableofcontents
 \addtocontents{toc}{~\hfill\textbf{Page}\par}
 
+\chapter*{Statement of Completion}
+The questions below were the ones that have been attempted:
+	\begin{description}
+		\item[Question 1]This question has been successfully completed.
+		\item[Question 2]This question has been successfully completed.
+		\item[Question 3]This question has been successfully completed.
+		\item[Question 4]This question has been successfully completed.
+		\item[Question 5]This question has been successfully completed.
+		\item[Question 6]This question has been successfully completed.
+		\item[Question 7]This question has been successfully completed.
+		\item[Question 8]This question has been successfully completed.
+		\item[Question 9]This question has been successfully completed.
+	\end{description}
 
+\vspace{5em}
+\begin{table}[h]
+	\centering
+\begin{tabular}{lp{20ex}p{20ex}lp{20ex}}
+	 & & &  & \\\cline{1-2} \cline{4-5}
+	 Signature & & & Date &\\
+\end{tabular}
+\end{table}
 
-
+\chapter{}
+\vspace{-3em}
+	\begin{tabular}{rp{36ex}p{36ex}}
+		\toprule Input & Expected Output & Actual Output\\
+		\midrule
+		1 & I & I\\
+		2 & II & II\\
+		4 & IV & IV\\
+		5 & V & V\\
+		6 & VI & IV \\
+		9 & IX & IX \\
+		10 & X & X \\
+		20 & XX & XX \\
+		40 & XL & XL\\
+		49 & XLIX & XLIX\\
+		50 & L & L \\
+		60 & LX & LX \\
+		90 & XC & XC \\
+		99 & XCIX & XCIX \\
+		100 & C & C\\ 
+		150 & CL & CL \\
+		400 & CD & CD \\
+		499 & CDXCIX & CDXCIX \\
+		500 & D & D\\
+		600 & DC & DC\\
+		900 & CM & CM\\
+		999 & CMXCIX & CMXCIX\\
+		1000& M & M\\
+		1024& MXXIV & MXXIV\\
+		2000& The input was not a valid number between 1 and 1024 Please try again and enter a number to convert: &  The input was not a valid number between 1 and 1024 Please try again and enter a number to convert:\\
+		abc& The input was not a valid number between 1 and 1024 Please try again and enter a number to convert: &  The input was not a valid number between 1 and 1024 Please try again and enter a number to convert:\\
+				
+		\bottomrule
+				
+	\end{tabular}
+\source
+\lstinputlisting{"/CSA1017 Q1/src/Question1.java"}
+\chapter{}
+\begin{assumption}
+	This program assumes that the expression provided at is a correct expression.
+\end{assumption}
+\begin{table}[h!]
+	\centering
+\begin{tabular}{lp{28ex}p{28ex}}
+	\toprule Input & Expected Output & Actual Output\\
+	\midrule
+	4 5 + & 9.0 & 9.0\\
+	12 6 - & 6.0 & 6.0\\
+	3 2 / & 1.5 & 1.5 \\
+	7 2 * & 14.0 & 14.0\\
+	23 85 + 92 * & 9936.0 & 9936.0 \\
+	43.5 3.2 - 4.5 * 3.24 + & 184.59 & 184.59 \\
+	34.8 62.11 * -76 / & -28.43984211 & -28.439842105263157\\
+	282 -56 * 1024 - -55.6 * & 934969.6 & 934969.6\\
+	Test & Your expression contained invalid characters. For input string "T" Your expression is invalid. Evaluation failed& Your expression contained invalid characters. For input string "T" Your expression is invalid. Evaluation failed\\ 
+	1 + & Stack is Empty. Your expression is invalid. Evaluation failed. &  Stack is Empty. Your expression is invalid. Evaluation failed.\\
+	3 64 6 + & The stack has not been emptied. There are too many operands in your expression. Your expression is invalid. Evaluation failed. & The stack has not been emptied. There are too many operands in your expression. Your expression is invalid. Evaluation failed. \\
+	4 0 / & Infinity & Infinity \\
+	
+	\bottomrule
+\end{tabular}
+\end{table}
 \printbibliography[title={References}]
 \addcontentsline{toc}{chapter}{References}
 \end{document}
