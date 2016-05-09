@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.EmptyStackException;
 
 /**
  * Created by mark on 14/02/16.
@@ -28,23 +29,24 @@ public class Stack<E> extends ArrayList {
      * Pushes the data onto the stack
      *
      * @param data data to be pushed on the stack
-     * @return true if successfully pushed. false otherwise (stack is full?)
+     * @throws IndexOutOfBoundsException if not sucessfully pushed
      */
-    public boolean push(E data) {
+    public void push(E data) throws IndexOutOfBoundsException {
         int prevSize = this.size();
         this.add(data);
 
         //Condition to check if the data has been successfully added.
-        if (this.size() == prevSize + 1) return true;
-        else return false;
+        if (!(this.size() == prevSize + 1))
+            throw new IndexOutOfBoundsException("Failed to push to stack");
     }
 
     /**
      * Pops the topmost item from the stack.
-     * @return the data from the top f the stack is not empty. null if it is empty.
+     * @return the data from the top of the stack is not empty.
+     * @throws EmptyStackException if the stack is empty.
      */
-    public E pop() {
-        if (this.size() == 0) return null;
+    public E pop() throws ArrayIndexOutOfBoundsException {
+        if (this.size() == 0) throw new EmptyStackException();
         else return (E) this.remove(this.size() - 1);
     }
 
