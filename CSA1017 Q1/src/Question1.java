@@ -1,5 +1,6 @@
 /**
- * Created by mark on 08/02/16.
+ * @author Mark Said Camilleri
+ * @version 20160509
  */
 
 
@@ -65,7 +66,8 @@ public class Question1 {
          */
         for (int i = dec.length - 1; i >= 0; i--) {
             //If the value is larger, then the output is concatenated with the output of the difference.
-            if (toConvert >= dec[i]) return rom[i] + convert(toConvert - dec[i]);
+            if (toConvert >= dec[i])
+                return rom[i] + convert(toConvert - dec[i]);
         }
         return ""; //What to return at 0, the base case.
     }
