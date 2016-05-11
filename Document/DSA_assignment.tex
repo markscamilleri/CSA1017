@@ -1,4 +1,4 @@
-\documentclass[12pt,a4paper,]{report}
+\documentclass[12pt,a4paper,onesided]{report}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -19,6 +19,7 @@
 %        SIUNITX setup        %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \sisetup{zero-decimal-to-integer, round-mode=places, round-precision=3}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %    Code-Related Packages    %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -192,6 +193,7 @@ Friday 4th May 2016
 \addtocontents{toc}{~\hfill\textbf{Page}\par}
 
 \chapter*{Statement of Completion}
+\addcontentsline{toc}{chapter}{Statement of Completion}
 The questions below were the ones that have been attempted:
 	\begin{description}
 		\item[Question 1]This question has been successfully completed.
@@ -213,7 +215,6 @@ The questions below were the ones that have been attempted:
 	 Signature & & & Date &\\
 \end{tabular}
 \end{table}
-
 \chapter{}
 \vspace{-3em}
 	\begin{tabular}{rp{36ex}p{36ex}}
@@ -252,9 +253,6 @@ The questions below were the ones that have been attempted:
 \source
 \lstinputlisting{"/CSA1017 Q1/src/Question1.java"}
 \chapter{}
-\begin{assumption}
-	This program assumes that the expression provided at is a correct expression.
-\end{assumption}
 \begin{table}[h!]
 	\centering
 \begin{tabular}{lp{28ex}p{28ex}}
@@ -272,9 +270,22 @@ The questions below were the ones that have been attempted:
 	1 + & Stack is Empty. Your expression is invalid. Evaluation failed. &  Stack is Empty. Your expression is invalid. Evaluation failed.\\
 	3 64 6 + & The stack has not been emptied. There are too many operands in your expression. Your expression is invalid. Evaluation failed. & The stack has not been emptied. There are too many operands in your expression. Your expression is invalid. Evaluation failed. \\
 	4 0 / & Infinity & Infinity \\
-	
 	\bottomrule
 \end{tabular}
+\end{table}
+\source
+\subsection{Stack Class}
+\lstinputlisting{"/CSA1017 Q2/src/Stack.java"}
+\subsection{Question 2 Main Class}
+\lstinputlisting{"/CSA1017 Q2/src/Question2.java"}
+\chapter{}
+\begin{table}
+	\centering
+\begin{tabular}{lp{28ex}p{28ex}}
+	\toprule Input & Expected Output & Actual Output\\
+	\midrule
+	
+	\end{tabular}
 \end{table}
 \printbibliography[title={References}]
 \addcontentsline{toc}{chapter}{References}
