@@ -126,6 +126,6 @@ public class Question2 {
          */
         System.out.println("|---------------------------------------------------|");
         System.out.printf("| Answer of Evaluation = %-26s |\n", nums.pop().toString());
-        System.out.println("|___________________________________________________|");
+        System.out.println("‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾");
     }
 }
