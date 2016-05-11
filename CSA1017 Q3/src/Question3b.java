@@ -3,7 +3,8 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
- * Created by mark on 12/02/16.
+ * @author Mark Said Camilleri
+ * @version 20160511
  */
 public class Question3b {
 

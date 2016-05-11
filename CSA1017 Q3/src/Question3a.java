@@ -1,9 +1,10 @@
-/**
- * Created by mark on 10/02/16.
- */
-
 import java.util.InputMismatchException;
 import java.util.Scanner;
+
+/**
+ * @author Mark Said Camilleri
+ * @version 20160511
+ */
 
 public class Question3a {
 
