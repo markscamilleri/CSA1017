@@ -19,7 +19,7 @@ public class Question3a {
         System.out.println("|         Submission by Mark Said Camilleri         |");
         System.out.println("|            Task 3a: Prime Number Checker          |");
         System.out.println("|---------------------------------------------------|");
-        System.out.print("| Please enter a number to check: ");
+        System.out.print("| Please enter an integer to check: ");
 
         try {
             //The number to check whether or not it's prime
@@ -46,8 +46,10 @@ public class Question3a {
      * @return true if the number is prime, false if it isn't
      */
     private static boolean isPrime(long prime) {
-        //Firstly, if the number is 1, which is a square number.
-        if (prime == 1) return false;
+        /*Firstly, if the number is 1, 0 or negative then it's not
+         * prime
+         */
+        if (prime <= 1) return false;
             //Secondly, if the number is even, then it's not prime.
         else if (prime % 2 == 0) return false;
         /* Otherwise, divide this number by all odd numbers till the
