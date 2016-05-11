@@ -38,11 +38,6 @@ public class Question3b {
             System.out.println("| program and try again with a valid input.         |");
             System.out.println("‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾");
             System.exit(1);
-        } catch (InputMismatchException ime) {
-            System.out.println("| Your input was not accepted. Please restart the   |");
-            System.out.println("| program and try again with a valid input.         |");
-            System.out.println("‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾");
-            System.exit(1);
         } catch (IllegalArgumentException iae) {
             System.out.printf("| %-49s |", iae.getMessage());
             System.out.println("| Please restart the program and try again with a   |");
