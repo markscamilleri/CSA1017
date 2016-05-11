@@ -34,6 +34,7 @@ public class Question3b {
                 System.out.printf("| %31d is a prime number |\n", prime);
             else
                 System.out.printf("| %27d is not a prime number |\n", prime);
+            System.out.println("‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾");
         } catch (InputMismatchException ime) {
             System.out.println("| Your input was not accepted. Please restart the   |");
             System.out.println("| program and try again with a valid input.         |");
@@ -44,6 +45,7 @@ public class Question3b {
             System.out.println("| Please restart the program and try again with a   |");
             System.out.println("| valid input.                                      |");
             System.out.println("‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾");
+            System.exit(1);
 
         }
     }

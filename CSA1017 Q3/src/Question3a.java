@@ -31,6 +31,8 @@ public class Question3a {
                 System.out.printf("| %31d is a prime number |\n", prime);
             else
                 System.out.printf("| %27d is not a prime number |\n", prime);
+
+            System.out.println("‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾");
         } catch (InputMismatchException ime) {
             System.out.println("| Your input was not accepted. Please restart the   |");
             System.out.println("| program and try again with a valid input.         |");
@@ -51,7 +53,9 @@ public class Question3a {
          * prime
          */
         if (prime <= 1) return false;
-            //Secondly, if the number is even, then it's not prime.
+            //If the number is 2, 2 is prime.
+        else if (prime == 2) return true;
+            //If the number is even and not 2, then it's not prime.
         else if (prime % 2 == 0) return false;
         /* Otherwise, divide this number by all odd numbers till the
          * square root of the number. If one is divisible then it's
