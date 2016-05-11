@@ -279,12 +279,27 @@ The questions below were the ones that have been attempted:
 \subsection{Question 2 Main Class}
 \lstinputlisting{"/CSA1017 Q2/src/Question2.java"}
 \chapter{}
-\begin{table}
+\begin{table}[h!]
 	\centering
 \begin{tabular}{lp{28ex}p{28ex}}
 	\toprule Input & Expected Output & Actual Output\\
 	\midrule
+	1 & 1 is not a prime number& 1 is not a prime number\\
+	2 & 2 is a prime number & 2 is a prime number\\
+	3 & 3 is a prime number & 3 is a prime number\\
+	4 & 4 is not a prime number & 4 is not a prime number\\
+	-2 & -2 is not a prime number & -2 is not a prime number\\a
+	677 & 677 is a prime number & 677 is a prime number\\
+	34939 & 34939 is a prime number & 34939 is a prime number\\
+	381165334 & 381165334 is not a prime number & 381165334 is not a prime number\\
+	188737204 & 188737204 is not a prime number & 188737204 is not a prime number\\
+	947396057 & 947396057 is a prime number & 947396057 is a prime number\\
+	9223372036854775807 & 9223372036854775807 is not a prime number & 9223372036854775807 is not a prime number\\
+	-9223372036854775808 & -9223372036854775808 is not a prime number &-9223372036854775808 is not a prime number\\
+	9223372036854775808 & Your input was not accepted. Please restart the program and try again with a valid input. & Your input was not accepted. Please restart the program and try again with a valid input.\\
+	Test & Your input was not accepted. Please restart the program and try again with a valid input. & Your input was not accepted. Please restart the program and try again with a valid input.\\
 	
+	\bottomrule
 	\end{tabular}
 \end{table}
 \printbibliography[title={References}]
