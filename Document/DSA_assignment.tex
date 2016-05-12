@@ -48,37 +48,54 @@
 \usepackage{multirow}
 \usepackage{parskip}
 \usepackage{tocloft}
+\usepackage{titlesec}
 \usepackage{xparse}
 \usepackage{enumitem}
 \setlist[description]{leftmargin=10ex,labelindent=10ex}
 
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  HEADER AND FOOTER CONFIG  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{fancyhdr}
-\pagestyle{fancy}
-
 \usepackage{lastpage}
 
-\lhead{\slshape \leftmark}
-\rhead{\slshape \rightmark}
+\pagestyle{fancy}
+
+\lhead{}%\slshape \leftmark}
+\rhead{\slshape \leftmark}
 \rfoot{Page \thepage\ of \pageref{LastPage}}
 \cfoot{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SECTIONING CONFIG       %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Chapter
+\renewcommand{\chaptername}{\vspace{-3em} Task}
+%\renewcommand{\thechapter}{\arabic{chapter}}
+%\titleformat{\chapter}[display]   
+%{\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}   
+%\titlespacing*{\chapter}{0pt}{-50pt}{40pt}
 
 
-\renewcommand{\chaptername}{Task}
-\renewcommand{\thechapter}{\arabic{chapter}}
-\renewcommand{\thesection}{Task \arabic{chapter}\alph{section}} 
-\renewcommand{\thesubsection}{Task \arabic{chapter}\alph{section}.\arabic{subsection}} 
-
-\cftsetindents{chapter}{0em}{3.75em}
-\cftsetindents{section}{1.5em}{3em}
-\cftsetindents{subsection}{3em}{4.5em}
-
-\renewcommand{\cftchappresnum}{Task }
-
-\def\chapterautorefname{Task}
+% Section
+%\renewcommand{\thesection}{Task \arabic{chapter}.\arabic{section}} 
+	
+%Subsection
+%\renewcommand{\thesubsection}{Task \arabic{chapter}\ifnum\value{section}>0.\arabic{section}\fi.\arabic{subsection}} 
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%         TOC CONFIG          %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\cftsetindents{chapter}{0em}{3.75em}
+%\cftsetindents{section}{1.5em}{3em}
+%\cftsetindents{subsection}{3em}{4.5em}
+
+%\renewcommand{\cftchappresnum}{Task }
+
+% Name to use for referenceing chapters
+%\def\chapterautorefname{Task}
+
+% listings configuration
 \definecolor{mygreen}{rgb}{0,0.6,0}
 \definecolor{mygray}{rgb}{0.5,0.5,0.5}
 \definecolor{mymauve}{rgb}{0.58,0,0.82}
@@ -144,8 +161,18 @@
 
 \usetikzlibrary{decorations.pathreplacing}
 \usetikzlibrary{arrows}
+%%%%%%%%%%%%%%%%%%%%%%
+%     NEW COMMANDS   %
+%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\source}{\pagebreak
+	\ifnum\value{section}>0
+		\subsection{The source code for \thesection}
 
-\newcommand{\source}{\pagebreak\subsection*{The source code for \thesection}}
+	\else
+		\section{The source code for Task \thechapter}
+
+	\fi
+	}
 \newcommand{\AND}{{\normalfont\textbf{and}}}
 
 \DeclareDocumentEnvironment{assumption}{o}{
@@ -172,8 +199,8 @@
 \addbibresource{/home/mark/Documents/BibTeX/library.bib}
 
 \begin{document}
-\begin{titlepage}
-\vspace*{\fill}
+	\begin{titlepage}
+		\vspace*{\fill}
 \centering
 \includegraphics[width=0.2\textwidth]{University_of_Malta_Logo}\\
 \vspace*{3em}
@@ -190,7 +217,7 @@ Friday 4th May 2016
 \end{titlepage}
 \pagebreak
 \tableofcontents
-\addtocontents{toc}{~\hfill\textbf{Page}\par}
+\addtocontents{toc}{\hfill\textbf{Page}\par}
 
 \chapter*{Statement of Completion}
 \addcontentsline{toc}{chapter}{Statement of Completion}
@@ -215,7 +242,7 @@ The questions below were the ones that have been attempted:
 	 Signature & & & Date &\\
 \end{tabular}
 \end{table}
-\chapter{}
+\chapter{Arabic to Roman Numeral Converter}
 \vspace{-3em}
 	\begin{tabular}{rp{36ex}p{36ex}}
 		\toprule Input & Expected Output & Actual Output\\
@@ -252,7 +279,7 @@ The questions below were the ones that have been attempted:
 	\end{tabular}
 \source
 \lstinputlisting{"/CSA1017 Q1/src/Question1.java"}
-\chapter{}
+\chapter{Reverse Polish Notation Evaluator}
 \begin{table}[h!]
 	\centering
 \begin{tabular}{lp{28ex}p{28ex}}
@@ -278,10 +305,11 @@ The questions below were the ones that have been attempted:
 \lstinputlisting{"/CSA1017 Q2/src/Stack.java"}
 \subsection{Question 2 Main Class}
 \lstinputlisting{"/CSA1017 Q2/src/Question2.java"}
-\chapter{}
+\chapter{Prime Numbers}
+\section{Prime Number Checker using divisibility check}
 \begin{table}[h!]
 	\centering
-\begin{tabular}{lp{28ex}p{28ex}}
+\begin{tabular}{lp{30ex}p{30ex}}
 	\toprule Input & Expected Output & Actual Output\\
 	\midrule
 	1 & 1 is not a prime number& 1 is not a prime number\\
@@ -291,8 +319,8 @@ The questions below were the ones that have been attempted:
 	-2 & -2 is not a prime number & -2 is not a prime number\\a
 	677 & 677 is a prime number & 677 is a prime number\\
 	34939 & 34939 is a prime number & 34939 is a prime number\\
-	381165334 & 381165334 is not a prime number & 381165334 is not a prime number\\
 	188737204 & 188737204 is not a prime number & 188737204 is not a prime number\\
+	381165334 & 381165334 is not a prime number & 381165334 is not a prime number\\
 	947396057 & 947396057 is a prime number & 947396057 is a prime number\\
 	9223372036854775807 & 9223372036854775807 is not a prime number & 9223372036854775807 is not a prime number\\
 	-9223372036854775808 & -9223372036854775808 is not a prime number &-9223372036854775808 is not a prime number\\
@@ -302,6 +330,36 @@ The questions below were the ones that have been attempted:
 	\bottomrule
 	\end{tabular}
 \end{table}
+\newpage
+\section{Prime Number Checker using The Sieve of Eratosthenes}
+For this an \lstinline|int| variable had to be used, due to it being the length of an array. As a result the range of numbers that can be checked was smaller.
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{lp{30ex}p{30ex}}
+		\toprule Input & Expected Output & Actual Output\\
+		\midrule
+		1 & 1 is not a prime number& 1 is not a prime number\\
+		2 & 2 is a prime number & 2 is a prime number\\
+		3 & 3 is a prime number & 3 is a prime number\\
+		4 & 4 is not a prime number & 4 is not a prime number\\
+		-2 & Sieve of Eratosthenes only works on +ve integers. Please restart the program and try again with a valid input & Sieve of Eratosthenes only works on +ve integers. Please restart the program and try again with a valid input\\
+		677 & 677 is a prime number & 677 is a prime number\\
+		34939 & 34939 is a prime number & 34939 is a prime number\\
+		188737204 & 188737204 is not a prime number & 188737204 is not a prime number\\
+		381165334 & 381165334 is not a prime number & 381165334 is not a prime number\\
+		947396057 & 947396057 is a prime number & 947396057 is a prime number\\
+		2147483646& 2147483646 is not a prime number & Requested array size exceeds VM limit Please restart the program and try again with a smaller input\footnote{} \\ 
+		-2147483646 & Sieve of Eratosthenes only works on +ve integers. Please restart the program and try again with a valid input & Sieve of Eratosthenes only works on +ve integers. Please restart the program and try again with a valid input\\
+		9223372036854775807 & Your input was not accepted. Please restart the program and try again with a valid input.
+		 & Your input was not accepted. Please restart the program and try again with a valid input.\\
+		Test & Your input was not accepted. Please restart the program and try again with a valid input.
+		& Your input was not accepted. Please restart the program and try again with a valid input.\\
+		
+		\bottomrule
+	\end{tabular}
+\end{table}
+\footnotetext{This error depends on the amount of memory allocated for the program}
+\source
 \printbibliography[title={References}]
 \addcontentsline{toc}{chapter}{References}
 \end{document}
