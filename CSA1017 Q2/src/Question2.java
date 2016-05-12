@@ -19,7 +19,7 @@ public class Question2 {
         System.out.println("|     Task 2: Reverse Polish Notation evaluator     |");
         System.out.println("|---------------------------------------------------|");
         System.out.println("|     Note: This program can only do +,-,* and /    |");
-        System.out.print("| Please enter an expression to evaluate: "); //prompt for user input. Assumes correctness.
+        System.out.print("| Please enter an expression to evaluate: "); //prompt for user input. Assumes it is rpn.
 
         /* Initialized a stack object (using the stack defined here).
          * Note, no importing of the Stack class.
