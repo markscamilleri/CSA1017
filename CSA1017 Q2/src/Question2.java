@@ -122,7 +122,7 @@ public class Question2 {
             }
         }
         /*When the above iteration is complete, there should only be
-         * one item on the stack whcih is the answer.
+         * one item on the stack which is the answer.
          */
         System.out.println("|---------------------------------------------------|");
         System.out.printf("| Answer of Evaluation = %-26s |\n", nums.pop().toString());
