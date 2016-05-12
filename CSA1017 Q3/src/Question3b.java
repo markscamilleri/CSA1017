@@ -41,12 +41,17 @@ public class Question3b {
             System.out.println("‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾");
             System.exit(1);
         } catch (IllegalArgumentException iae) {
-            System.out.printf("| %-49s |", iae.getMessage());
+            System.out.printf("| %-49s |\n", iae.getMessage());
             System.out.println("| Please restart the program and try again with a   |");
             System.out.println("| valid input.                                      |");
             System.out.println("‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾");
             System.exit(1);
-
+        } catch (OutOfMemoryError oome) {
+            System.out.printf("| %-49s |\n", oome.getMessage());
+            System.out.println("| Please restart the program and try again with a   |");
+            System.out.println("| smaller input.                                    |");
+            System.out.println("‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾");
+            System.exit(1);
         }
     }
 
@@ -58,7 +63,7 @@ public class Question3b {
      * @return true if the input is prime, false if it isn't.
      * @throws IllegalArgumentException if the input is <= 0
      */
-    private static boolean sieve(int prime) throws IllegalArgumentException {
+    private static boolean sieve(int prime) throws IllegalArgumentException, OutOfMemoryError {
         //Checks whether the input is valid or not
         if (prime <= 0)
             //Throws exception if input is not valid.
