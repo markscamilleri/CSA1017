@@ -18,7 +18,7 @@ public class Question3a {
         System.out.println("|    CSA 1017 - Data Structures and Algorithms 1    |");
         System.out.println("|---------------------------------------------------|");
         System.out.println("|         Submission by Mark Said Camilleri         |");
-        System.out.println("|            Task 3a: Prime Number Checker          |");
+        System.out.println("|           Task 3.1: Prime Number Checker          |");
         System.out.println("|---------------------------------------------------|");
         System.out.print("| Please enter an integer to check: ");
 

@@ -18,7 +18,7 @@ public class Question3b {
         System.out.println("|    CSA 1017 - Data Structures and Algorithms 1    |");
         System.out.println("|---------------------------------------------------|");
         System.out.println("|         Submission by Mark Said Camilleri         |");
-        System.out.println("|           Task 3b: Sieve of Eratosthenes          |");
+        System.out.println("|          Task 3.2: Sieve of Eratosthenes          |");
         System.out.println("|---------------------------------------------------|");
         System.out.print("| Please enter a positive integer to check: ");
         try {
