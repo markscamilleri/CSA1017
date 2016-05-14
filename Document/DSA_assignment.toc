@@ -9,6 +9,13 @@
 \contentsline {subsection}{\numberline {2.1.2}Question 2 Main Class}{8}{subsection.2.1.2}
 \contentsline {chapter}{\numberline {3}Prime Numbers}{12}{chapter.3}
 \contentsline {section}{\numberline {3.1}Prime Number Checker using divisibility check}{12}{section.3.1}
-\contentsline {section}{\numberline {3.2}Prime Number Checker using The Sieve of Eratosthenes}{13}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}The source code for 3.2}{14}{subsection.3.2.1}
-\contentsline {chapter}{References}{14}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.1.1}The source code for 3.1}{13}{subsection.3.1.1}
+\contentsline {section}{\numberline {3.2}Prime Number Checker using The Sieve of Eratosthenes}{15}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}The source code for 3.2}{16}{subsection.3.2.1}
+\contentsline {chapter}{\numberline {4}Shell Sort}{19}{chapter.4}
+\contentsline {chapter}{\numberline {5}}{20}{chapter.5}
+\contentsline {chapter}{\numberline {6}}{21}{chapter.6}
+\contentsline {chapter}{\numberline {7}}{22}{chapter.7}
+\contentsline {chapter}{\numberline {8}}{23}{chapter.8}
+\contentsline {chapter}{\numberline {9}}{24}{chapter.9}
+\contentsline {chapter}{References}{24}{chapter.9}
