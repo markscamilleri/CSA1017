@@ -27,16 +27,15 @@ public class Question4 {
         }
 
         //Displays the unsorted array to the user.
-        System.out.println("Unsorted Array:   " + Arrays.toString(arr));
+        System.out.println("Unsorted Array: " + Arrays.toString(arr));
 
         //Sorts the array
         int[] sorted = shellSort(arr);
 
         //Displays the sorted array to the user
-        System.out.print("Sorted Array: ");
-        System.out.println(Arrays.toString(sorted));
+        System.out.println("Sorted Array:   " + Arrays.toString(sorted));
 
-
+        //Displays whether the array is indeed sorted or not.
         System.out.println("Array is sorted: " + checkSortedAscending(sorted));
     }
 
@@ -95,15 +94,30 @@ public class Question4 {
 
     }
 
+    /**
+     * Method that checks whether the elements in the array in the
+     * parameter are all in ascending order.
+     *
+     * @param array The array to be checked.
+     * @return true if all elements are in ascending order, false otherwise.
+     */
     public static boolean checkSortedAscending(int[] array) {
 
-        boolean isAscending = true;
-
-        for (int i = 0; i < array.length - 1 && isAscending; i++) {
+         /* Iterates through all elements except for the last one.
+         * If an unsorted element is found for loop stops.
+         */
+        for (int i = 0; i < array.length - 1; i++) {
+            /*
+             * If the ith element is larger than the i-1th element
+             * then the array is not sorted. Method ends returning
+             * false
+             */
             if (array[i] > array[i + 1])
-                isAscending = false;
+                return false;
         }
-
-        return isAscending;
+        /* If the condition is never satisfied, then the method returns
+         * true.
+         */
+        return true;
     }
 }
