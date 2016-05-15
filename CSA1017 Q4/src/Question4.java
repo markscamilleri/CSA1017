@@ -1,12 +1,11 @@
 import java.util.Arrays;
-import java.util.Scanner;
 
 /**
  * Created by mark on 14/02/16.
  */
 public class Question4 {
 
-    public static final int SIZE = 10;
+    public static final int SIZE = 16384;
 
     public static void main(String[] args) {
 
@@ -28,7 +27,7 @@ public class Question4 {
         }
 
         //Displays the unsorted array to the user.
-        System.out.println(Arrays.toString(arr));
+        System.out.println("Unsorted Array:   " + Arrays.toString(arr));
 
         //Sorts the array
         int[] sorted = shellSort(arr);
@@ -37,6 +36,8 @@ public class Question4 {
         System.out.print("Sorted Array: ");
         System.out.println(Arrays.toString(sorted));
 
+
+        System.out.println("Array is sorted: " + checkSortedAscending(sorted));
     }
 
     /**
@@ -92,5 +93,17 @@ public class Question4 {
         }
         return sorted;
 
+    }
+
+    public static boolean checkSortedAscending(int[] array) {
+
+        boolean isAscending = true;
+
+        for (int i = 0; i < array.length - 1 && isAscending; i++) {
+            if (array[i] > array[i + 1])
+                isAscending = false;
+        }
+
+        return isAscending;
     }
 }
