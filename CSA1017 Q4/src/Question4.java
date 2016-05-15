@@ -23,7 +23,7 @@ public class Question4 {
 
         //Populating the array with random data.
         for (int i = 0; i < arr.length; i++) {
-            arr[i] = (int) ((Math.random() + 1) * SIZE);
+            arr[i] = (int) (Math.random() * SIZE);
         }
 
         //Displays the unsorted array to the user.
