@@ -14,6 +14,7 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{siunitx}
+\usepackage{fdsymbol}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %        SIUNITX setup        %
@@ -24,7 +25,7 @@
 %    Code-Related Packages    %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{listings}
-\usepackage{algorithm2e}
+\usepackage[lined,boxed,procnumbered,longend,linesnumbered,commentsnumbered]{algorithm2e}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %  Graphic-Related Packages  %
@@ -363,6 +364,25 @@ For this an \lstinline|int| variable had to be used, due to it being the length 
 \source
 \lstinputlisting{"/CSA1017 Q3/src/Question3b.java"}
 \chapter{Shell Sort} 
+Since the requirement of this task was for the program to generate an array containing 16,384 elements, all of which are random numbers, and sort them, it is impossible to write the contents of the array for a reliable amount of tests and keep this document to a reasonable size. As a result, the program itself checks whether the array that has been sorted, is in fact sorted. This is done using the algorithm \lstinline|checkSortedAscending| as given in Algorithm \ref{asc:alg} (also included in the source code).
+
+\begin{algorithm}
+	\TitleOfAlgo{Check if sorted in ascending order}
+	\KwIn{int array}
+	\KwOut{boolean}
+	\BlankLine
+		\For{i = 0... length of array - 1}{
+			\If{element at i $>$ element at i+1}{
+				\Return{false}
+			}
+		}	
+		\Return{true}
+	\caption{checkSortedAscending(int[] array)}
+	\label{asc:alg}
+\end{algorithm}
+
+\source
+\lstinputlisting{"/CSA1017 Q4/src/Question4.java"}
 \chapter{}
 \chapter{}
 \chapter{}
