@@ -1,7 +1,8 @@
 import java.util.Arrays;
 
 /**
- * Created by mark on 14/02/16.
+ * @author Mark Said Camilleri
+ * @version 20160516
  */
 public class Question4 {
 

@@ -2,7 +2,8 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
- * Created by mark on 18/02/16.
+ * @author Mark Said Camilleri
+ * @version 20160516
  */
 public class Question5 {
     public static void main(String[] args) {
@@ -62,7 +63,8 @@ public class Question5 {
              * This will keep on, either until there has been no change
              * or until it has done Integer.MAX_VALUE number of steps.
              */
-        } while (curr_x != prev_x && steps < Integer.MAX_VALUE);
+        }
+        while (curr_x != prev_x && curr_x != Double.NaN && steps < Integer.MAX_VALUE);
 
         System.out.println("|---------------------------------------------------|");
 
@@ -71,8 +73,8 @@ public class Question5 {
          * built-in sqrt method, then it's approximately equal to,
          * which is denoted by \u2248.
          */
-
         char sign = (curr_x == Math.sqrt(input)) ? '=' : '\u2248';
+
         System.out.println("The square root of " + input + " " + sign + " " + curr_x);
         System.out.println("This was done in " + steps + " steps");
     }
