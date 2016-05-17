@@ -5,9 +5,9 @@
 public class Question6 {
 
     /**
-     * Stores the size of the matricie
+     * Stores the size of the matrices
      */
-    public static final int SIZE = 3;
+    public static final int SIZE = 32;
 
     public static void main(String[] args) {
 
