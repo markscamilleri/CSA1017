@@ -14,9 +14,11 @@
 \contentsline {subsection}{\numberline {3.2.1}The source code for 3.2}{16}{subsection.3.2.1}
 \contentsline {chapter}{\numberline {4}Shell Sort}{19}{chapter.4}
 \contentsline {section}{\numberline {4.1}The source code for Task 4}{20}{section.4.1}
-\contentsline {chapter}{\numberline {5}}{23}{chapter.5}
-\contentsline {chapter}{\numberline {6}}{24}{chapter.6}
-\contentsline {chapter}{\numberline {7}}{25}{chapter.7}
-\contentsline {chapter}{\numberline {8}}{26}{chapter.8}
-\contentsline {chapter}{\numberline {9}}{27}{chapter.9}
-\contentsline {chapter}{References}{27}{chapter.9}
+\contentsline {chapter}{\numberline {5}Approximation of a Square Root}{23}{chapter.5}
+\contentsline {section}{\numberline {5.1}The source code for Task 5}{24}{section.5.1}
+\contentsline {chapter}{\numberline {6}Matrix Multiplication}{26}{chapter.6}
+\contentsline {section}{\numberline {6.1}The source code for Task 6}{27}{section.6.1}
+\contentsline {chapter}{\numberline {7}}{30}{chapter.7}
+\contentsline {chapter}{\numberline {8}}{31}{chapter.8}
+\contentsline {chapter}{\numberline {9}}{32}{chapter.9}
+\contentsline {chapter}{References}{32}{chapter.9}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.17)  15 MAY 2016 19:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.17)  17 MAY 2016 20:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1615,7 +1615,7 @@ ps-converted-to.pdf University_of_Malta_Logo.eps>
 (epstopdf)             \includegraphics on input line 206.
 Package epstopdf Info: Output file is already uptodate.
 
-<University_of_Malta_Logo-eps-converted-to.pdf, id=86, 484.81125pt x 659.46375p
+<University_of_Malta_Logo-eps-converted-to.pdf, id=94, 484.81125pt x 659.46375p
 t>
 File: University_of_Malta_Logo-eps-converted-to.pdf Graphic file (type pdf)
 <use University_of_Malta_Logo-eps-converted-to.pdf>
@@ -1638,6 +1638,11 @@ l.223 \chapter
 
 ]
 \vspace {-3em} Task 1.
+
+Overfull \hbox (1.81433pt too wide) in paragraph at lines 248--281
+[]
+ []
+
 [3
 
 ] (/home/mark/IdeaProjects/CSA1017///CSA1017 Q1/src/Question1.java [4]) [5]
@@ -1650,6 +1655,11 @@ Underfull \hbox (badness 1694) in paragraph at lines 297--297
 
 Underfull \hbox (badness 1694) in paragraph at lines 297--298
 []|\OT1/cmr/m/n/12 Your ex-pres-sion con-tained
+ []
+
+
+Overfull \hbox (7.88948pt too wide) in paragraph at lines 286--303
+ [][] 
  []
 
 [6
@@ -3054,37 +3064,53 @@ Overfull \hbox (566.45395pt too wide) in paragraph at lines 53--54
 ] (/home/mark/IdeaProjects/CSA1017///CSA1017 Q4/src/Question4.java [20] [21]) [
 22]
 \vspace {-3em} Task 5.
+
+Underfull \hbox (badness 3701) in paragraph at lines 413--413
+[]|\OT1/cmr/m/n/12 Your in-put was not ac-
+ []
+
+
+Underfull \hbox (badness 3701) in paragraph at lines 413--414
+[]|\OT1/cmr/m/n/12 Your in-put was not ac-
+ []
+
+
+Overfull \hbox (5.21312pt too wide) in paragraph at lines 397--416
+ [][] 
+ []
+
 [23
 
-]
+] (/home/mark/IdeaProjects/CSA1017///CSA1017 Q5/src/Question5.java [24]) [25]
 \vspace {-3em} Task 6.
-[24
+[26
 
-]
+] (/home/mark/IdeaProjects/CSA1017///CSA1017 Q6/src/Question6.java [27] [28]) [
+29]
 \vspace {-3em} Task 7.
-[25
+[30
 
 ]
 \vspace {-3em} Task 8.
-[26
+[31
 
 ]
 \vspace {-3em} Task 9.
 
-LaTeX Warning: Empty bibliography on input line 391.
+LaTeX Warning: Empty bibliography on input line 476.
 
 
 AED: lastpage setting LastPage
-[27
+[32
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 393.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 393.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 478.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 478.
 (./DSA_assignment.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 393.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 393.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 478.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 478.
 Package rerunfilecheck Info: File `DSA_assignment.out' has not changed.
-(rerunfilecheck)             Checksum: 2250AD0CF47CEE4F4379A7D790C00A3A;1214.
+(rerunfilecheck)             Checksum: E01C19A04E6C74EA3FBE91127B92A6EE;1411.
 Package logreq Info: Writing requests to 'DSA_assignment.run.xml'.
 \openout1 = `DSA_assignment.run.xml'.
 
@@ -3094,27 +3120,30 @@ Package logreq Info: Writing requests to 'DSA_assignment.run.xml'.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 46307 strings out of 493054
- 1002422 string characters out of 6140585
- 1817861 words of memory out of 5000000
- 48535 multiletter control sequences out of 15000+600000
- 25016 words of font info for 91 fonts, out of 8000000 for 9000
+ 46570 strings out of 493054
+ 1006475 string characters out of 6140585
+ 1817983 words of memory out of 5000000
+ 48565 multiletter control sequences out of 15000+600000
+ 25328 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,19n,90p,10386b,29771s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf-dist/fonts/type1/public/fdsymbol/FdSymbolB-Bo
-ok.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/s
-hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr
-/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmtt10.pfb>
-Output written on DSA_assignment.pdf (28 pages, 609182 bytes).
+ 62i,19n,90p,10386b,29775s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf-dist/fonts/type1/public/fdsymbol/FdSymbolA-Bo
+ok.pfb></usr/share/texmf-dist/fonts/type1/public/fdsymbol/FdSymbolB-Book.pfb></
+usr/share/texmf-dist/fonts/type1/public/fdsymbol/FdSymbolF-Book.pfb></usr/share
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
+/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></u
+sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on DSA_assignment.pdf (33 pages, 657711 bytes).
 PDF statistics:
- 1026 PDF objects out of 1200 (max. 8388607)
- 973 compressed objects within 10 object streams
- 642 named destinations out of 1000 (max. 500000)
- 178 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1347 PDF objects out of 1440 (max. 8388607)
+ 1282 compressed objects within 13 object streams
+ 866 named destinations out of 1000 (max. 500000)
+ 194 words of extra memory for PDF output out of 10000 (max. 10000000)
 
