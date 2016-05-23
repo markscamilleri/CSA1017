@@ -24,8 +24,7 @@ public class Question7 {
         String[] text_nos;
         int[] numbers = {0};
 
-        /*
-         * This is to ask the user to input the numbers again if the
+        /* This is to ask the user to input the numbers again if the
          * user has provided us with a bad input.
          */
         boolean inputIsCorrect;
@@ -68,9 +67,9 @@ public class Question7 {
     /**
      * Recursive function to find the maximum number in an array
      *
-     * @param nums       The array to return it's max value
-     * @param max        Current maximum value.
-     *                   This should start with Integer.MIN_VALUE.
+     * @param nums The array to return it's max value
+     * @param max  Current maximum value. This should start with
+     *             Integer.MIN_VALUE.
      * @return the maximum value.
      */
     public static int findMax(int[] nums, int max) {
@@ -80,15 +79,14 @@ public class Question7 {
             return max;
         } else {
 
-            /*
-             * If the element at startIndex > max, then it is the
+            /* If the element at startIndex > max, then it is the
              * current maximum value.
              */
             if (nums[0] > max) {
                 max = nums[0];
             }
-            /*
-             * Recursive call. Checks this max with the array starting
+
+            /* Recursive call. Checks this max with the array starting
              * from the next element
              */
             return findMax(Arrays.copyOfRange(nums, 1, nums.length), max);
