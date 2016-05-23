@@ -2,7 +2,8 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
- * Created by mark on 25/04/16.
+ * @author Mark Said Camilleri
+ * @version 20160523
  */
 public class Question8 {
     public static void main(String[] args) {
