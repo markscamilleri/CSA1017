@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.17)  23 MAY 2016 16:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.17)  23 MAY 2016 21:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1408,16 +1408,6 @@ File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
 File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
 \arrowsize=\dimen317
 ))
-.................................................
-. LaTeX info: "xparse/define-environment"
-. 
-. Defining environment 'assumption' with sig. 'o' on line 187.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-environment"
-. 
-. Defining environment 'limitation' with sig. 'o' on line 197.
-.................................................
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 (/usr/share/texmf-dist/tex/latex/biblatex/lbx/english.lbx
@@ -1432,27 +1422,27 @@ LaTeX Warning: Unused global option(s):
 (./DSA_assignment.aux)
 \openout1 = `DSA_assignment.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 202.
-LaTeX Font Info:    ... okay on input line 202.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 202.
-LaTeX Font Info:    ... okay on input line 202.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 202.
-LaTeX Font Info:    ... okay on input line 202.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 202.
-LaTeX Font Info:    ... okay on input line 202.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 202.
-LaTeX Font Info:    ... okay on input line 202.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 202.
-LaTeX Font Info:    ... okay on input line 202.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 202.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 202.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 183.
+LaTeX Font Info:    ... okay on input line 183.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 183.
+LaTeX Font Info:    ... okay on input line 183.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 183.
+LaTeX Font Info:    ... okay on input line 183.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 183.
+LaTeX Font Info:    ... okay on input line 183.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 183.
+LaTeX Font Info:    ... okay on input line 183.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 183.
+LaTeX Font Info:    ... okay on input line 183.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 183.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 183.
 
 (/usr/share/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 202.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 202.
-LaTeX Font Info:    ... okay on input line 202.
+LaTeX Font Info:    ... okay on input line 183.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 183.
+LaTeX Font Info:    ... okay on input line 183.
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1525,7 +1515,7 @@ e
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.12} into 
 your preamble.
- on input line 202.
+ on input line 183.
 
 Package biblatex Info: No input encoding detected.
 (biblatex)             Assuming 'ascii'.
@@ -1536,10 +1526,10 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'DSA_assignment.bbl' found.
 (./DSA_assignment.bbl)
-Package biblatex Info: Reference section=0 on input line 202.
-Package biblatex Info: Reference segment=0 on input line 202.
+Package biblatex Info: Reference section=0 on input line 183.
+Package biblatex Info: Reference segment=0 on input line 183.
 \AtBeginShipoutBox=\box76
-Package hyperref Info: Link coloring OFF on input line 202.
+Package hyperref Info: Link coloring OFF on input line 183.
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -1547,61 +1537,61 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count400
 )
-LaTeX Info: Redefining \ref on input line 202.
-LaTeX Info: Redefining \pageref on input line 202.
-LaTeX Info: Redefining \nameref on input line 202.
+LaTeX Info: Redefining \ref on input line 183.
+LaTeX Info: Redefining \pageref on input line 183.
+LaTeX Info: Redefining \nameref on input line 183.
 (./DSA_assignment.out) (./DSA_assignment.out)
 \@outlinefile=\write5
 \openout5 = `DSA_assignment.out'.
 
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 202.
+(lastpage)             ! on input line 183.
 \c__siunitx_mathsf_int=\count401
 LaTeX Font Info:    Font shape `U/FdSymbolA/m/n' will be
-(Font)              scaled to size 12.0pt on input line 202.
+(Font)              scaled to size 12.0pt on input line 183.
 LaTeX Font Info:    Font shape `U/FdSymbolA/m/n' will be
-(Font)              scaled to size 8.0pt on input line 202.
+(Font)              scaled to size 8.0pt on input line 183.
 LaTeX Font Info:    Font shape `U/FdSymbolA/m/n' will be
-(Font)              scaled to size 6.0pt on input line 202.
+(Font)              scaled to size 6.0pt on input line 183.
 LaTeX Font Info:    Font shape `U/FdSymbolE/m/n' will be
-(Font)              scaled to size 12.0pt on input line 202.
+(Font)              scaled to size 12.0pt on input line 183.
 LaTeX Font Info:    Font shape `U/FdSymbolE/m/n' will be
-(Font)              scaled to size 8.0pt on input line 202.
+(Font)              scaled to size 8.0pt on input line 183.
 LaTeX Font Info:    Font shape `U/FdSymbolE/m/n' will be
-(Font)              scaled to size 6.0pt on input line 202.
-LaTeX Font Info:    Try loading font information for U+msa on input line 202.
+(Font)              scaled to size 6.0pt on input line 183.
+LaTeX Font Info:    Try loading font information for U+msa on input line 183.
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 202.
+LaTeX Font Info:    Try loading font information for U+msb on input line 183.
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `U/FdSymbolB/m/n' will be
-(Font)              scaled to size 12.0pt on input line 202.
+(Font)              scaled to size 12.0pt on input line 183.
 LaTeX Font Info:    Font shape `U/FdSymbolB/m/n' will be
-(Font)              scaled to size 8.0pt on input line 202.
+(Font)              scaled to size 8.0pt on input line 183.
 LaTeX Font Info:    Font shape `U/FdSymbolB/m/n' will be
-(Font)              scaled to size 6.0pt on input line 202.
+(Font)              scaled to size 6.0pt on input line 183.
 LaTeX Font Info:    Font shape `U/FdSymbolC/m/n' will be
-(Font)              scaled to size 12.0pt on input line 202.
+(Font)              scaled to size 12.0pt on input line 183.
 LaTeX Font Info:    Font shape `U/FdSymbolC/m/n' will be
-(Font)              scaled to size 8.0pt on input line 202.
+(Font)              scaled to size 8.0pt on input line 183.
 LaTeX Font Info:    Font shape `U/FdSymbolC/m/n' will be
-(Font)              scaled to size 6.0pt on input line 202.
+(Font)              scaled to size 6.0pt on input line 183.
 LaTeX Font Info:    Font shape `U/FdSymbolD/m/n' will be
-(Font)              scaled to size 12.0pt on input line 202.
+(Font)              scaled to size 12.0pt on input line 183.
 LaTeX Font Info:    Font shape `U/FdSymbolD/m/n' will be
-(Font)              scaled to size 8.0pt on input line 202.
+(Font)              scaled to size 8.0pt on input line 183.
 LaTeX Font Info:    Font shape `U/FdSymbolD/m/n' will be
-(Font)              scaled to size 6.0pt on input line 202.
+(Font)              scaled to size 6.0pt on input line 183.
 LaTeX Font Info:    Font shape `U/FdSymbolF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 202.
+(Font)              scaled to size 12.0pt on input line 183.
 LaTeX Font Info:    Font shape `U/FdSymbolF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 202.
+(Font)              scaled to size 8.0pt on input line 183.
 LaTeX Font Info:    Font shape `U/FdSymbolF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 202.
+(Font)              scaled to size 6.0pt on input line 183.
 \c__siunitx_mathtt_int=\count402
 Package epstopdf Info: Source file: <University_of_Malta_Logo.eps>
 (epstopdf)                    date: 2016-02-04 22:30:32
@@ -1612,15 +1602,15 @@ pdf>
 (epstopdf)                    size: 404686 bytes
 (epstopdf)             Command: <repstopdf --outfile=University_of_Malta_Logo-e
 ps-converted-to.pdf University_of_Malta_Logo.eps>
-(epstopdf)             \includegraphics on input line 206.
+(epstopdf)             \includegraphics on input line 187.
 Package epstopdf Info: Output file is already uptodate.
 
-<University_of_Malta_Logo-eps-converted-to.pdf, id=98, 484.81125pt x 659.46375p
+<University_of_Malta_Logo-eps-converted-to.pdf, id=99, 484.81125pt x 659.46375p
 t>
 File: University_of_Malta_Logo-eps-converted-to.pdf Graphic file (type pdf)
 <use University_of_Malta_Logo-eps-converted-to.pdf>
 Package pdftex.def Info: University_of_Malta_Logo-eps-converted-to.pdf used on 
-input line 206.
+input line 187.
 (pdftex.def)             Requested size: 91.04742pt x 123.84033pt.
 [1
 
@@ -1633,13 +1623,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.223 \chapter
+l.204 \chapter
               *{Statement of Completion} [1] [2
 
 ]
 \vspace {-3em} Task 1.
 
-Overfull \hbox (1.81433pt too wide) in paragraph at lines 248--281
+Overfull \hbox (1.81433pt too wide) in paragraph at lines 229--262
 []
  []
 
@@ -1648,17 +1638,17 @@ Overfull \hbox (1.81433pt too wide) in paragraph at lines 248--281
 ] (/home/mark/IdeaProjects/CSA1017///CSA1017 Q1/src/Question1.java [4]) [5]
 \vspace {-3em} Task 2.
 
-Underfull \hbox (badness 1694) in paragraph at lines 297--297
+Underfull \hbox (badness 1694) in paragraph at lines 278--278
 []|\OT1/cmr/m/n/12 Your ex-pres-sion con-tained
  []
 
 
-Underfull \hbox (badness 1694) in paragraph at lines 297--298
+Underfull \hbox (badness 1694) in paragraph at lines 278--279
 []|\OT1/cmr/m/n/12 Your ex-pres-sion con-tained
  []
 
 
-Overfull \hbox (7.88948pt too wide) in paragraph at lines 286--303
+Overfull \hbox (7.88948pt too wide) in paragraph at lines 267--284
  [][] 
  []
 
@@ -1998,7 +1988,7 @@ Overfull \hbox (566.45395pt too wide) in paragraph at lines 129--130
 ) [11]
 \vspace {-3em} Task 3.
 
-Overfull \hbox (6.29668pt too wide) in paragraph at lines 313--333
+Overfull \hbox (6.29668pt too wide) in paragraph at lines 294--314
  [][] 
  []
 
@@ -2334,68 +2324,68 @@ Overfull \hbox (566.45395pt too wide) in paragraph at lines 39--40
  []
 
 [13]) [14]
-Underfull \hbox (badness 3701) in paragraph at lines 348--348
+Underfull \hbox (badness 3701) in paragraph at lines 329--329
 []|\OT1/cmr/m/n/12 Sieve of Er-atos-thenes only
  []
 
 
-Underfull \hbox (badness 3701) in paragraph at lines 348--349
+Underfull \hbox (badness 3701) in paragraph at lines 329--330
 []|\OT1/cmr/m/n/12 Sieve of Er-atos-thenes only
  []
 
 
-Underfull \hbox (badness 1776) in paragraph at lines 354--354
+Underfull \hbox (badness 1776) in paragraph at lines 335--335
 []|\OT1/cmr/m/n/12 2147483646 is not a prime
  []
 
 LaTeX Font Info:    Font shape `U/FdSymbolA/m/n' will be
-(Font)              scaled to size 10.0pt on input line 354.
+(Font)              scaled to size 10.0pt on input line 335.
 LaTeX Font Info:    Font shape `U/FdSymbolA/m/n' will be
-(Font)              scaled to size 7.0pt on input line 354.
+(Font)              scaled to size 7.0pt on input line 335.
 LaTeX Font Info:    Font shape `U/FdSymbolA/m/n' will be
-(Font)              scaled to size 5.0pt on input line 354.
+(Font)              scaled to size 5.0pt on input line 335.
 LaTeX Font Info:    Font shape `U/FdSymbolE/m/n' will be
-(Font)              scaled to size 10.0pt on input line 354.
+(Font)              scaled to size 10.0pt on input line 335.
 LaTeX Font Info:    Font shape `U/FdSymbolE/m/n' will be
-(Font)              scaled to size 7.0pt on input line 354.
+(Font)              scaled to size 7.0pt on input line 335.
 LaTeX Font Info:    Font shape `U/FdSymbolE/m/n' will be
-(Font)              scaled to size 5.0pt on input line 354.
+(Font)              scaled to size 5.0pt on input line 335.
 LaTeX Font Info:    Font shape `U/FdSymbolB/m/n' will be
-(Font)              scaled to size 10.0pt on input line 354.
+(Font)              scaled to size 10.0pt on input line 335.
 LaTeX Font Info:    Font shape `U/FdSymbolB/m/n' will be
-(Font)              scaled to size 7.0pt on input line 354.
+(Font)              scaled to size 7.0pt on input line 335.
 LaTeX Font Info:    Font shape `U/FdSymbolB/m/n' will be
-(Font)              scaled to size 5.0pt on input line 354.
+(Font)              scaled to size 5.0pt on input line 335.
 LaTeX Font Info:    Font shape `U/FdSymbolC/m/n' will be
-(Font)              scaled to size 10.0pt on input line 354.
+(Font)              scaled to size 10.0pt on input line 335.
 LaTeX Font Info:    Font shape `U/FdSymbolC/m/n' will be
-(Font)              scaled to size 7.0pt on input line 354.
+(Font)              scaled to size 7.0pt on input line 335.
 LaTeX Font Info:    Font shape `U/FdSymbolC/m/n' will be
-(Font)              scaled to size 5.0pt on input line 354.
+(Font)              scaled to size 5.0pt on input line 335.
 LaTeX Font Info:    Font shape `U/FdSymbolD/m/n' will be
-(Font)              scaled to size 10.0pt on input line 354.
+(Font)              scaled to size 10.0pt on input line 335.
 LaTeX Font Info:    Font shape `U/FdSymbolD/m/n' will be
-(Font)              scaled to size 7.0pt on input line 354.
+(Font)              scaled to size 7.0pt on input line 335.
 LaTeX Font Info:    Font shape `U/FdSymbolD/m/n' will be
-(Font)              scaled to size 5.0pt on input line 354.
+(Font)              scaled to size 5.0pt on input line 335.
 LaTeX Font Info:    Font shape `U/FdSymbolF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 354.
+(Font)              scaled to size 10.0pt on input line 335.
 LaTeX Font Info:    Font shape `U/FdSymbolF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 354.
+(Font)              scaled to size 7.0pt on input line 335.
 LaTeX Font Info:    Font shape `U/FdSymbolF/m/n' will be
-(Font)              scaled to size 5.0pt on input line 354.
+(Font)              scaled to size 5.0pt on input line 335.
 
-Underfull \hbox (badness 3701) in paragraph at lines 355--355
+Underfull \hbox (badness 3701) in paragraph at lines 336--336
 []|\OT1/cmr/m/n/12 Sieve of Er-atos-thenes only
  []
 
 
-Underfull \hbox (badness 3701) in paragraph at lines 355--356
+Underfull \hbox (badness 3701) in paragraph at lines 336--337
 []|\OT1/cmr/m/n/12 Sieve of Er-atos-thenes only
  []
 
 
-Overfull \hbox (2.38005pt too wide) in paragraph at lines 341--362
+Overfull \hbox (2.38005pt too wide) in paragraph at lines 322--343
  [][] 
  []
 
@@ -3065,17 +3055,17 @@ Overfull \hbox (566.45395pt too wide) in paragraph at lines 53--54
 22]
 \vspace {-3em} Task 5.
 
-Underfull \hbox (badness 3701) in paragraph at lines 413--413
+Underfull \hbox (badness 3701) in paragraph at lines 394--394
 []|\OT1/cmr/m/n/12 Your in-put was not ac-
  []
 
 
-Underfull \hbox (badness 3701) in paragraph at lines 413--414
+Underfull \hbox (badness 3701) in paragraph at lines 394--395
 []|\OT1/cmr/m/n/12 Your in-put was not ac-
  []
 
 
-Overfull \hbox (5.21312pt too wide) in paragraph at lines 397--416
+Overfull \hbox (5.21312pt too wide) in paragraph at lines 378--397
  [][] 
  []
 
@@ -3088,48 +3078,47 @@ Overfull \hbox (5.21312pt too wide) in paragraph at lines 397--416
 ] (/home/mark/IdeaProjects/CSA1017///CSA1017 Q6/src/Question6.java [27] [28]) [
 29]
 \vspace {-3em} Task 7.
+\c@test7=\count403
+[30
 
-Overfull \hbox (20.86299pt too wide) in paragraph at lines 494--495
+]
+Overfull \hbox (20.86299pt too wide) in paragraph at lines 514--515
 []\OT1/cmr/m/n/12 -70210333 620267078 832297266 -242136666 -759786803 89498046 
 390942259
  []
 
 
-Overfull \hbox (7.1548pt too wide) in paragraph at lines 500--501
+Overfull \hbox (7.1548pt too wide) in paragraph at lines 520--521
 []\OT1/cmr/m/n/12 680932039 798137906 1362068 -482386095 976166649 54797596 264
 771471
  []
 
 
-Overfull \hbox (28.69624pt too wide) in paragraph at lines 506--507
+Overfull \hbox (28.69624pt too wide) in paragraph at lines 526--527
 []\OT1/cmr/m/n/12 463847872 970322047 994450928 475574164 639319683 -942622068 
 -319105910
  []
 
-[30
-
-] [31] (/home/mark/IdeaProjects/CSA1017///CSA1017 Q7/src/Question7.java [32] [3
-3]) [34]
+[31] [32] (/home/mark/IdeaProjects/CSA1017///CSA1017 Q7/src/Question7.java [33]
+) [34]
 \vspace {-3em} Task 8.
 [35
 
-]
+] (/home/mark/IdeaProjects/CSA1017///CSA1017 Q8/src/Question8.java [36] [37] [3
+8]) [39]
 \vspace {-3em} Task 9.
 
-LaTeX Warning: Empty bibliography on input line 526.
-
-
 AED: lastpage setting LastPage
-[36
+[40
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 528.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 528.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 573.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 573.
 (./DSA_assignment.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 528.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 528.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 573.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 573.
 Package rerunfilecheck Info: File `DSA_assignment.out' has not changed.
-(rerunfilecheck)             Checksum: 370EB8EBB4E4CEC5D4A7A25AA0BDB162;1510.
+(rerunfilecheck)             Checksum: 502C9B51AAD67D244F09B240EC496709;1565.
 Package logreq Info: Writing requests to 'DSA_assignment.run.xml'.
 \openout1 = `DSA_assignment.run.xml'.
 
@@ -3139,30 +3128,32 @@ Package logreq Info: Writing requests to 'DSA_assignment.run.xml'.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 46697 strings out of 493054
- 1008435 string characters out of 6140585
- 1817983 words of memory out of 5000000
- 48583 multiletter control sequences out of 15000+600000
- 25328 words of font info for 92 fonts, out of 8000000 for 9000
+ 46869 strings out of 493054
+ 1010891 string characters out of 6140585
+ 1817050 words of memory out of 5000000
+ 48589 multiletter control sequences out of 15000+600000
+ 26990 words of font info for 97 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,19n,90p,10386b,29775s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf-dist/fonts/type1/public/fdsymbol/FdSymbolA-Bo
-ok.pfb></usr/share/texmf-dist/fonts/type1/public/fdsymbol/FdSymbolB-Book.pfb></
-usr/share/texmf-dist/fonts/type1/public/fdsymbol/FdSymbolF-Book.pfb></usr/share
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
-/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></u
-sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf
--dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on DSA_assignment.pdf (37 pages, 669837 bytes).
+ 62i,19n,90p,10386b,29729s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.en
+c}</usr/share/texmf-dist/fonts/type1/public/fdsymbol/FdSymbolA-Book.pfb></usr/s
+hare/texmf-dist/fonts/type1/public/fdsymbol/FdSymbolB-Book.pfb></usr/share/texm
+f-dist/fonts/type1/public/fdsymbol/FdSymbolF-Book.pfb></usr/share/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
+r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></u
+sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-
+super/sfrm1200.pfb>
+Output written on DSA_assignment.pdf (41 pages, 692749 bytes).
 PDF statistics:
- 1496 PDF objects out of 1728 (max. 8388607)
- 1425 compressed objects within 15 object streams
- 971 named destinations out of 1000 (max. 500000)
+ 1708 PDF objects out of 1728 (max. 8388607)
+ 1630 compressed objects within 17 object streams
+ 1128 named destinations out of 1200 (max. 500000)
  202 words of extra memory for PDF output out of 10000 (max. 10000000)
 

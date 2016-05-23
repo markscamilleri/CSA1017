@@ -27,7 +27,13 @@
 \contentsline {paragraph}{Test 6}{31}{chapter.7}
 \contentsline {paragraph}{Test 7}{31}{chapter.7}
 \contentsline {paragraph}{Test 8}{31}{chapter.7}
-\contentsline {section}{\numberline {7.1}The source code for Task 7}{32}{section.7.1}
-\contentsline {chapter}{\numberline {8}}{35}{chapter.8}
-\contentsline {chapter}{\numberline {9}}{36}{chapter.9}
-\contentsline {chapter}{References}{36}{chapter.9}
+\contentsline {paragraph}{Test 9}{31}{chapter.7}
+\contentsline {paragraph}{Test 10}{31}{chapter.7}
+\contentsline {paragraph}{Test 11}{31}{chapter.7}
+\contentsline {paragraph}{Test 12}{32}{chapter.7}
+\contentsline {paragraph}{Test 13}{32}{chapter.7}
+\contentsline {paragraph}{Test 14}{32}{chapter.7}
+\contentsline {section}{\numberline {7.1}The source code for Task 7}{33}{section.7.1}
+\contentsline {chapter}{\numberline {8}Sine or Cosine Approximation}{35}{chapter.8}
+\contentsline {section}{\numberline {8.1}The source code for Task 8}{36}{section.8.1}
+\contentsline {chapter}{\numberline {9}}{40}{chapter.9}

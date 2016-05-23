@@ -81,8 +81,5 @@
     <requires type="dynamic">
       <file>DSA_assignment.bcf</file>
     </requires>
-    <requires type="editable">
-      <file>/home/mark/Documents/BibTeX/library.bib</file>
-    </requires>
   </external>
 </requests>
