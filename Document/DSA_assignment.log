@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.17)  17 MAY 2016 20:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.17)  23 MAY 2016 16:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1615,7 +1615,7 @@ ps-converted-to.pdf University_of_Malta_Logo.eps>
 (epstopdf)             \includegraphics on input line 206.
 Package epstopdf Info: Output file is already uptodate.
 
-<University_of_Malta_Logo-eps-converted-to.pdf, id=94, 484.81125pt x 659.46375p
+<University_of_Malta_Logo-eps-converted-to.pdf, id=98, 484.81125pt x 659.46375p
 t>
 File: University_of_Malta_Logo-eps-converted-to.pdf Graphic file (type pdf)
 <use University_of_Malta_Logo-eps-converted-to.pdf>
@@ -3088,29 +3088,48 @@ Overfull \hbox (5.21312pt too wide) in paragraph at lines 397--416
 ] (/home/mark/IdeaProjects/CSA1017///CSA1017 Q6/src/Question6.java [27] [28]) [
 29]
 \vspace {-3em} Task 7.
+
+Overfull \hbox (20.86299pt too wide) in paragraph at lines 494--495
+[]\OT1/cmr/m/n/12 -70210333 620267078 832297266 -242136666 -759786803 89498046 
+390942259
+ []
+
+
+Overfull \hbox (7.1548pt too wide) in paragraph at lines 500--501
+[]\OT1/cmr/m/n/12 680932039 798137906 1362068 -482386095 976166649 54797596 264
+771471
+ []
+
+
+Overfull \hbox (28.69624pt too wide) in paragraph at lines 506--507
+[]\OT1/cmr/m/n/12 463847872 970322047 994450928 475574164 639319683 -942622068 
+-319105910
+ []
+
 [30
 
-]
+] [31] (/home/mark/IdeaProjects/CSA1017///CSA1017 Q7/src/Question7.java [32] [3
+3]) [34]
 \vspace {-3em} Task 8.
-[31
+[35
 
 ]
 \vspace {-3em} Task 9.
 
-LaTeX Warning: Empty bibliography on input line 476.
+LaTeX Warning: Empty bibliography on input line 526.
 
 
 AED: lastpage setting LastPage
-[32
+[36
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 478.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 478.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 528.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 528.
 (./DSA_assignment.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 478.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 478.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 528.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 528.
 Package rerunfilecheck Info: File `DSA_assignment.out' has not changed.
-(rerunfilecheck)             Checksum: E01C19A04E6C74EA3FBE91127B92A6EE;1411.
+(rerunfilecheck)             Checksum: 370EB8EBB4E4CEC5D4A7A25AA0BDB162;1510.
 Package logreq Info: Writing requests to 'DSA_assignment.run.xml'.
 \openout1 = `DSA_assignment.run.xml'.
 
@@ -3120,10 +3139,10 @@ Package logreq Info: Writing requests to 'DSA_assignment.run.xml'.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 46570 strings out of 493054
- 1006475 string characters out of 6140585
+ 46697 strings out of 493054
+ 1008435 string characters out of 6140585
  1817983 words of memory out of 5000000
- 48565 multiletter control sequences out of 15000+600000
+ 48583 multiletter control sequences out of 15000+600000
  25328 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,19n,90p,10386b,29775s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3140,10 +3159,10 @@ ublic/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></u
 sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on DSA_assignment.pdf (33 pages, 657711 bytes).
+Output written on DSA_assignment.pdf (37 pages, 669837 bytes).
 PDF statistics:
- 1347 PDF objects out of 1440 (max. 8388607)
- 1282 compressed objects within 13 object streams
- 866 named destinations out of 1000 (max. 500000)
- 194 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1496 PDF objects out of 1728 (max. 8388607)
+ 1425 compressed objects within 15 object streams
+ 971 named destinations out of 1000 (max. 500000)
+ 202 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -18,7 +18,16 @@
 \contentsline {section}{\numberline {5.1}The source code for Task 5}{24}{section.5.1}
 \contentsline {chapter}{\numberline {6}Matrix Multiplication}{26}{chapter.6}
 \contentsline {section}{\numberline {6.1}The source code for Task 6}{27}{section.6.1}
-\contentsline {chapter}{\numberline {7}}{30}{chapter.7}
-\contentsline {chapter}{\numberline {8}}{31}{chapter.8}
-\contentsline {chapter}{\numberline {9}}{32}{chapter.9}
-\contentsline {chapter}{References}{32}{chapter.9}
+\contentsline {chapter}{\numberline {7}Maximum Number in an Array}{30}{chapter.7}
+\contentsline {paragraph}{Test 1}{30}{chapter.7}
+\contentsline {paragraph}{Test 2}{30}{chapter.7}
+\contentsline {paragraph}{Test 3}{30}{chapter.7}
+\contentsline {paragraph}{Test 4}{30}{chapter.7}
+\contentsline {paragraph}{Test 5}{30}{chapter.7}
+\contentsline {paragraph}{Test 6}{31}{chapter.7}
+\contentsline {paragraph}{Test 7}{31}{chapter.7}
+\contentsline {paragraph}{Test 8}{31}{chapter.7}
+\contentsline {section}{\numberline {7.1}The source code for Task 7}{32}{section.7.1}
+\contentsline {chapter}{\numberline {8}}{35}{chapter.8}
+\contentsline {chapter}{\numberline {9}}{36}{chapter.9}
+\contentsline {chapter}{References}{36}{chapter.9}
