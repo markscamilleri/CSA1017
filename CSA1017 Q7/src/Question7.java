@@ -61,7 +61,7 @@ public class Question7 {
         } while (!inputIsCorrect);
 
         System.out.println("|===================================================|");
-        System.out.printf("| The maximum number from your list was: %10d |\n", findMax(numbers, 0, Integer.MIN_VALUE));
+        System.out.printf("| The maximum number from your list was: %10d |\n", findMax(numbers, Integer.MIN_VALUE));
         System.out.println("|===================================================|");
     }
 
@@ -69,18 +69,14 @@ public class Question7 {
      * Recursive function to find the maximum number in an array
      *
      * @param nums       The array to return it's max value
-     * @param startIndex The index to start with.
-     *                   This is used to not create a deep copy of
-     *                   the array thus taking more memory than is
-     *                   actually needed.
      * @param max        Current maximum value.
      *                   This should start with Integer.MIN_VALUE.
      * @return the maximum value.
      */
-    public static int findMax(int[] nums, int startIndex, int max) {
+    public static int findMax(int[] nums, int max) {
 
         //Base case. If array is empty.
-        if (nums.length - 1 == startIndex) {
+        if (nums.length == 0) {
             return max;
         } else {
 
@@ -88,14 +84,14 @@ public class Question7 {
              * If the element at startIndex > max, then it is the
              * current maximum value.
              */
-            if (nums[startIndex] > max) {
-                max = nums[startIndex];
+            if (nums[0] > max) {
+                max = nums[0];
             }
             /*
              * Recursive call. Checks this max with the array starting
              * from the next element
              */
-            return findMax(nums, startIndex++, max);
+            return findMax(Arrays.copyOfRange(nums, 1, nums.length), max);
 
         }
     }
