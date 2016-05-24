@@ -58,7 +58,7 @@ public class Question4 {
          * This loop begins with the iterator being set at half the
          * size of the array, - 1. This then iterates downwards by
          * incrementing the iterator, dividing it by 2 and subtracting
-         * 1 from it, until it performs it's final iteration at a
+         * 1 from it, until it performs its final iteration at a
          * value of 1.
          */
         for (int sep = (unsorted.length / 2) - 1; sep > 0; sep = (sep + 1) / 2 - 1) {
@@ -83,11 +83,11 @@ public class Question4 {
                 for (j = i; j >= sep && sorted[j - sep] > temp; j -= sep) {
                     /*
                      * Moves the (j-sep)th by a step of sep to
-                     * leave space for temp at it's proper place.
+                     * leave space for temp at its proper place.
                      */
                     sorted[j] = sorted[j - sep];
                 }
-                //Once found temp is stored in it's proper place.
+                //Once found temp is stored in its proper place.
                 sorted[j] = temp;
             }
         }

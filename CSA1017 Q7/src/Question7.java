@@ -65,7 +65,7 @@ public class Question7 {
     /**
      * Recursive function to find the maximum number in an array
      *
-     * @param nums The array to return it's max value
+     * @param nums The array to return its max value
      * @param max  Current maximum value. This should start with
      *             Integer.MIN_VALUE.
      * @return the maximum value.
