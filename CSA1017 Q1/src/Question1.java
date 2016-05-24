@@ -50,7 +50,8 @@ public class Question1 {
     }
 
     /**
-     * Takes an int decimal value and outputs a string of the same value in Roman Numerals.
+     * Takes an int decimal value and outputs a string of the same
+     * value in Roman Numerals.
      *
      * @param toConvert the decimal value to ve converted to Roman Numerals
      * @return The roman numeral equivalent of the input parameter
@@ -61,8 +62,9 @@ public class Question1 {
         final int dec[] = {1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1000};
         final String rom[] = {"I", "IV", "V", "IX", "X", "XL", "L", "XC", "C", "CD", "D", "CM", "M"};
 
-        /* Begins by checking the input paramerer against the largest roman numeral/numeral pair.
-         * and works it's way down to the unit numeral.
+        /* Begins by checking the input paramerer against the
+         * largest roman numeral/numeral pair and works its way down
+         * to the unit numeral.
          */
         for (int i = dec.length - 1; i >= 0; i--) {
             //If the value is larger, then the output is concatenated with the output of the difference.
