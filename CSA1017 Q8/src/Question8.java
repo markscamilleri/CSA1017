@@ -88,7 +88,7 @@ public class Question8 {
                     //Sine and Cosine are local methods
                     double result = (fn == 's') ? sine(angle, n) : cosine(angle, n);
 
-                    System.out.printf("| The answer is: %-34f |", result);
+                    System.out.printf("| The answer is: %-34f |\n", result);
 
                 /* Catches an Exception if the input is not in the
                  * correct form.
