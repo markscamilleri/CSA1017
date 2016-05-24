@@ -125,7 +125,11 @@ public class Question6 {
                 System.out.printf("%7.2f ", matrix[i][j]);
             }
             System.out.println();
-            System.out.print("           ");
+
+            //Don't print this space after the last row
+            if (i < matrix.length - 1) {
+                System.out.print("           ");
+            }
         }
     }
 }
