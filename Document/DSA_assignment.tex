@@ -4,6 +4,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Foundation-Related Packages %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
 \usepackage[margin=2.5cm]{geometry}
 %\usepackage{subfiles}
 
@@ -25,12 +27,14 @@
 %    Code-Related Packages    %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{listings}
+\usepackage{textcomp}
 \usepackage[lined,boxed,procnumbered,longend,linesnumbered,commentsnumbered]{algorithm2e}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %  Graphic-Related Packages  %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{graphicx}
+\usepackage{pdfpages}
 \usepackage{pgfplots}
 \usepackage{tikz}
 \usepackage{xcolor}
@@ -62,47 +66,21 @@
 
 \pagestyle{fancy}
 
-\lhead{}%\slshape \leftmark}
+\lhead{}
 \rhead{\slshape \leftmark}
 \rfoot{Page \thepage\ of \pageref{LastPage}}
 \cfoot{}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     SECTIONING CONFIG       %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%Chapter
 \renewcommand{\chaptername}{\vspace{-3em} Task}
-%\renewcommand{\thechapter}{\arabic{chapter}}
-%\titleformat{\chapter}[display]   
-%{\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}   
-%\titlespacing*{\chapter}{0pt}{-50pt}{40pt}
-
-
-% Section
-%\renewcommand{\thesection}{Task \arabic{chapter}.\arabic{section}} 
-	
-%Subsection
-%\renewcommand{\thesubsection}{Task \arabic{chapter}\ifnum\value{section}>0.\arabic{section}\fi.\arabic{subsection}} 
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%         TOC CONFIG          %
+%      LISTINGS CONFIG        %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\cftsetindents{chapter}{0em}{3.75em}
-%\cftsetindents{section}{1.5em}{3em}
-%\cftsetindents{subsection}{3em}{4.5em}
-
-%\renewcommand{\cftchappresnum}{Task }
-
-% Name to use for referenceing chapters
-%\def\chapterautorefname{Task}
-
-% listings configuration
 \definecolor{mygreen}{rgb}{0,0.6,0}
 \definecolor{mygray}{rgb}{0.5,0.5,0.5}
 \definecolor{mymauve}{rgb}{0.58,0,0.82}
-
-\lstset{inputpath="/home/mark/IdeaProjects/CSA1017/",% Folder storing code
-}
 
 \lstdefinestyle{prog}{
   backgroundcolor=\color{white},    % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}
@@ -113,10 +91,11 @@
   commentstyle=\color{mygreen},     % comment style
   deletekeywords={...},             % if you want to delete keywords from the given language
   escapeinside={\%*}{*)},           % if you want to add LaTeX within your code
-  extendedchars=true,               % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  extendedchars=true,               % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8. Requires inputenc
   keepspaces=true,                  % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
   keywordstyle=\color{blue},        % keyword style
   language=Java,                    % the language of the code
+  literate={‾}{{$\overline{\phantom{x}}$}}1,
   morekeywords={*,...},             % if you want to add more keywords to the set
   numbers=left,                     % where to put the line-numbers; possible values are (none, left, right)
   numbersep=5pt,                    % how far the line-numbers are from the code
@@ -128,40 +107,11 @@
   stepnumber=1,                     % the step between two line-numbers. If it's 1, each line will be numbered
   stringstyle=\color{mymauve},      % string literal style
   tabsize=2,                        % sets default tabsize to 2 spaces
+  upquote=true,						% prints ' as '.
 }
 
+\lstset{style=prog, inputpath="/home/mark/IdeaProjects/CSA1017/",}
 
-
-\lstdefinestyle{sterm}{
-    backgroundcolor=\color{solarized-base3},
-    basicstyle=\ttfamily\small\color{solarized-base01},             % -- Making the font monospaced and small
-    breaklines=true,                                                % -- Allows automatic line breaking
-%   captionpos=b,                                                   % -- Caption position at bottom of listing
-    commentstyle = \color{solarized-base1},                         % -- Sets comments to solarized-green
-    escapeinside = {\%*}{*},                                        % -- Useful for adding LaTeX within the code
-    emphstyle =\bfseries\color{solarized-cyan},                     % -- Emphasized text style to red
-    identifierstyle=\color{solarized-base00},                       % -- Style for Identifiers
-    keepspaces=true,                                                % -- Keeps Spaces in text, useful for keeping identation of code.
-    keywordstyle =[1]\color{solarized-orange}\bfseries,             % -- Keyword style
-    keywordstyle =[2]\color{solarized-yellow}\bfseries,             % -- Keyword2 style
-    numbers=none,                                                   % -- Line numbers on the left
-    showspaces=false,                                               % -- Do not show spaces everywhere by adding particular underscores
-    showtabs=fase,                                                  % -- Do not show tabs within strings adding particular underscores
-    stringstyle=\color{solarized-blue},                             % -- String style
-    tabsize=2,                                                      % -- Setting the tab size to 2 spaces.
-    framexleftmargin=0pt,
-    framexrightmargin=0pt,
-    framextopmargin=0pt,
-}
-\lstset{style=prog}
-
-\tikzstyle{overbrace text style}=[font=\footnotesize, above, pos=.5, yshift=5mm]
-\tikzstyle{overbrace style}=[decorate,decoration={brace,raise=2mm,amplitude=7.5pt}]
-\tikzstyle{underbrace style}=[decorate,decoration={brace,raise=2mm,amplitude=3pt,mirror},color=gray]
-\tikzstyle{underbrace text style}=[font=\tiny, below, pos=.5, yshift=-3mm]
-
-\usetikzlibrary{decorations.pathreplacing}
-\usetikzlibrary{arrows}
 %%%%%%%%%%%%%%%%%%%%%%
 %     NEW COMMANDS   %
 %%%%%%%%%%%%%%%%%%%%%%
@@ -183,24 +133,31 @@
 \begin{document}
 	\begin{titlepage}
 		\vspace*{\fill}
-\centering
-\includegraphics[width=0.2\textwidth]{University_of_Malta_Logo}\\
-\vspace*{3em}
-\textbf{\LARGE CSA 1017\\\vspace{0.1em}Data Structures and Algorithms 1}\\
-\vspace*{0.75em}
-\textbf{\Large Assignment}\\
-\vspace{3em}matrices
-\large Mark Said Camilleri\\
-B.Sc. (Hons) (Computing Science)\\
-University of Malta\\
-\vspace*{1em}
-Friday 4th May 2016
+		\centering
+		\includegraphics[width=0.2\textwidth]{University_of_Malta_Logo}\\
+		\vspace*{3em}
+		\textbf{\LARGE CSA 1017\\\vspace{0.1em}Data Structures and Algorithms 1}\\
+		\vspace*{0.75em}
+		\textbf{\Large Assignment}\\
+		\vspace{3em}
+		\large Mark Said Camilleri\\
+			B.Sc. (Hons) (Computing Science)\\
+			University of Malta\\
+		\vspace*{1em}
+		Tuesday 24th May 2016
+		\vfill
+	\end{titlepage}
+	\pagebreak
+	\tableofcontents
+	\addtocontents{toc}{\hfill\textbf{Page}\par}
+\includepdf[pagecommand={\chapter*{}\addcontentsline{toc}{chapter}{Plagiarism Declaration Form}}]{Plagiarism-Declaration-Form}
+\chapter*{}
+\vspace{15em}
+\addcontentsline{toc}{chapter}{Turnitin Originality Report}
+\begin{center}
+\emph{This page has been intentionally left blank for the inclusion of \newline the Turnitin Originality Report} 
+\end{center}
 \vfill
-\end{titlepage}
-\pagebreak
-\tableofcontents
-\addtocontents{toc}{\hfill\textbf{Page}\par}
-
 \chapter*{Statement of Completion}
 \addcontentsline{toc}{chapter}{Statement of Completion}
 The questions below were the ones that have been attempted:
@@ -220,7 +177,7 @@ The questions below were the ones that have been attempted:
 \begin{table}[h]
 	\centering
 \begin{tabular}{lp{20ex}p{20ex}lp{20ex}}
-	 & & &  & \\\cline{1-2} \cline{4-5}
+	 & & & \multicolumn{2}{l}{Tuesday 24th May 2016} \\\cline{1-2} \cline{4-5}
 	 Signature & & & Date &\\
 \end{tabular}
 \end{table}
@@ -233,7 +190,7 @@ The questions below were the ones that have been attempted:
 		2 & II & II\\
 		4 & IV & IV\\
 		5 & V & V\\
-		6 & VI & IV \\
+		6 & VI & VI \\
 		9 & IX & IX \\
 		10 & X & X \\
 		20 & XX & XX \\
@@ -272,7 +229,7 @@ The questions below were the ones that have been attempted:
 	3 2 / & 1.5 & 1.5 \\
 	7 2 * & 14.0 & 14.0\\
 	23 85 + 92 * & 9936.0 & 9936.0 \\
-	43.5 3.2 - 4.5 * 3.24 + & 184.59 & 184.59 \\matrices
+	43.5 3.2 - 4.5 * 3.24 + & 184.59 & 184.59 \\
 	34.8 62.11 * -76 / & -28.43984211 & -28.439842105263157\\
 	282 -56 * 1024 - -55.6 * & 934969.6 & 934969.6\\
 	Test & Your expression contained invalid characters. For input string "T" Your expression is invalid. Evaluation failed& Your expression contained invalid characters. For input string "T" Your expression is invalid. Evaluation failed\\ 
@@ -298,7 +255,7 @@ The questions below were the ones that have been attempted:
 	2 & 2 is a prime number & 2 is a prime number\\
 	3 & 3 is a prime number & 3 is a prime number\\
 	4 & 4 is not a prime number & 4 is not a prime number\\
-	-2 & -2 is not a prime number & -2 is not a prime number\\a
+	-2 & -2 is not a prime number & -2 is not a prime number\\
 	677 & 677 is a prime number & 677 is a prime number\\
 	34939 & 34939 is a prime number & 34939 is a prime number\\
 	188737204 & 188737204 is not a prime number & 188737204 is not a prime number\\
@@ -348,7 +305,7 @@ For this an \lstinline|int| variable had to be used, due to it being the length 
 Since the requirement of this task was for the program to generate an array containing 16,384 elements, all of which are random numbers, and sort them, it is impossible to write the contents of the array for a reliable amount of tests and keep this document to a reasonable size. As a result, the program itself checks whether the array that has been sorted, is in fact sorted. This is done using the algorithm \lstinline|checkSortedAscending| as given in Algorithm \ref{asc:alg} (also included in the source code).
 
 \begin{algorithm}
-	\TitleOfAlgo{Check if sorted in ascending order}matrices
+	\TitleOfAlgo{Check if sorted in ascending order}
 	\KwIn{int array}
 	\KwOut{boolean}
 	\BlankLine
@@ -389,8 +346,8 @@ For this task, the Newton-Raphson algorithm was used, with the formula shown in 
 	5.6 & 2.366431913 &2.3664319132398464\\
 	0.25& 0.5 & 0.5\\
 	0.125& 0.3535533906 & 0.35355339059327373\\
-	-4& Your input was not accepted since it was $\geq$ 0 Please enter a POSITIVE number to find its square root:  & Your input was not accepted since it was $\geq$ 0 Please enter a POSITIVE number to find its square root:  \\
-	0 & Your input was not accepted since it was $\geq$ 0 Please enter a POSITIVE number to find its square root: & Your input was not accepted since it was $\geq$ 0 Please enter a POSITIVE number to find its square root: \\
+	-4& Your input was not accepted since it was $\leq$ 0 Please enter a POSITIVE number to find its square root:  & Your input was not accepted since it was $\leq$ 0 Please enter a POSITIVE number to find its square root:  \\
+	0 & Your input was not accepted since it was $\leq$ 0 Please enter a POSITIVE number to find its square root: & Your input was not accepted since it was $\leq$ 0 Please enter a POSITIVE number to find its square root: \\
 	Test& Your input was not accepted. Please try again: & Your input was not accepted. Please try again: \\
 	\bottomrule
 	\end{tabular}
@@ -569,5 +526,33 @@ It is worth noting that the matrices used to test the output are the matrices ou
 \end{table}
 \source
 \lstinputlisting{"/CSA1017 Q8/src/Question8.java"}
-\chapter{}
+\chapter{Sum of Fibonacci Sequence}
+\emph{Assumption: The first term is 0 to form the sequence 0, 1, 1, 2, 3, 5, ...}
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{rp{0.4\textwidth}p{0.4\textwidth}}
+		\toprule
+		Input $n$&Expected Output & Actual Output\\\midrule					
+		1 & 0 & 0\\
+		2 & 1 & 1\\
+		3 & 2 & 2\\
+		4 & 4 & 4\\
+		50&$2.03650\times10^{10}$&$2.03650\times10^{10}$\\
+		100& $5.73148\times10^{20}$& $5.73148\times10^{20}$\\
+		178& $1.14631\times10^{37}$& $1.14631\times10^{37}$\\
+		200& $4.53974\times10^{41}$& $4.53974\times10^{41}$\\
+		300& $3.59579\times10^{62}$& $3.59579\times10^{62}$\\
+		500& $2.25592\times10^{104}$ & $2.25592\times10^{104}$\\
+		1000& $7.03304\times10^{208}$ & $.03304\times10^{208}$\\
+		1475& $1.30699\times10^{308}$ & $1.30699\times10^{308}$\\
+		1476& $2.11475\times10^{308}$ & Infinity\footnote{} \\
+		-1 & Your input was not accepted. Please try again Please input the number of terms to calculate the sum of:  & Your input was not accepted. Please try again Please input the number of terms to calculate the sum of:\\
+		-5 & Your input was not accepted. Please try again Please input the number of terms to calculate the sum of:  & Your input was not accepted. Please try again Please input the number of terms to calculate the sum of:\\
+		Test & Your input was not accepted. Please try again Please input the number of terms to calculate the sum of:  & Your input was not accepted. Please try again Please input the number of terms to calculate the sum of:\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+\footnotetext{This was produced due to the limitations of the \lstinline|double| data type that was used. As a result, for all $n \geq 1476$ will result in an output of ``Infinity''}
+\source
+\lstinputlisting{"/CSA1017 Q9/src/Question9.java"}
 \end{document}
