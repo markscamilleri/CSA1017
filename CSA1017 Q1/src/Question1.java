@@ -67,7 +67,9 @@ public class Question1 {
          * to the unit numeral.
          */
         for (int i = dec.length - 1; i >= 0; i--) {
-            //If the value is larger, then the output is concatenated with the output of the difference.
+            /* If the value is larger, then the output is concatenated
+             * with the output of the difference.
+             */
             if (toConvert >= dec[i])
                 return rom[i] + convert(toConvert - dec[i]);
         }
