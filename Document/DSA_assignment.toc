@@ -8,7 +8,7 @@
 \contentsline {chapter}{\numberline {2}Reverse Polish Notation Evaluator}{8}{chapter.2}
 \contentsline {section}{\numberline {2.1}The source code for Task 2}{9}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Stack Class}{9}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Question 2 Main Class}{10}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.2}Question 2 Main Class}{11}{subsection.2.1.2}
 \contentsline {chapter}{\numberline {3}Prime Numbers}{14}{chapter.3}
 \contentsline {section}{\numberline {3.1}Prime Number Checker using divisibility check}{14}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}The source code for 3.1}{15}{subsection.3.1.1}

@@ -45,7 +45,7 @@ public class Question1 {
             }
         } while (isError || toConvert < 1 || toConvert > 1024);
 
-        System.out.printf("| %4d = %-24s in Roman Numerals |", toConvert, convert(toConvert));
+        System.out.printf("| %4d = %-24s in Roman Numerals |\n", toConvert, convert(toConvert));
 
     }
 
