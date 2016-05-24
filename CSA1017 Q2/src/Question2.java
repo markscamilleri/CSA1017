@@ -2,8 +2,8 @@ import java.util.EmptyStackException;
 import java.util.Scanner;
 
 /**
- * Created by mark on 09/02/16.
- * This answer assumes the RPN input is correct.
+ * @author Mark Said Camilleri
+ * @version 20160509
  */
 public class Question2 {
     public static void main(String args[]) {

@@ -3,8 +3,8 @@ import java.util.Collection;
 import java.util.EmptyStackException;
 
 /**
- * Created by mark on 14/02/16.
- *
+ * @author Mark Said Camilleri
+ * @version 20160509
  * A stack implemented as an ArrayList to have it dynamically increase its size.
  */
 public class Stack<E> extends ArrayList {
